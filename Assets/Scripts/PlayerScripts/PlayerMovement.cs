@@ -31,8 +31,6 @@ public class PlayerMovement : MonoBehaviour
         Vector2 movement = new Vector2(moveHorizontal, 0);
 
         transform.Translate(movement * Time.deltaTime * playerSpeed);
-
-
     }
 
     //Checks if the player is on the ground whenever it has a collision
@@ -61,5 +59,10 @@ public class PlayerMovement : MonoBehaviour
         {
             rigidbody.AddForce(new Vector2(0f, 5f), ForceMode2D.Impulse);
         }
+    }
+
+    public bool getIsGrounded()
+    {
+        return isGrounded;
     }
 }

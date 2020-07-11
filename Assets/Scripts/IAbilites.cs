@@ -1,4 +1,0 @@
-interface IAbilites
-{
-    void action();
-}

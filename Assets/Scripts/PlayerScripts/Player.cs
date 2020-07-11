@@ -10,15 +10,15 @@ public class Player : MonoBehaviour
     void Start()
     {
         //For testing
-        activeAbility = new GlideAbility();
+        activeAbility = new TinyAbility();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.W) && activeAbility.actionCondition(gameObject))
+        if(activeAbility.actionCondition(gameObject))
             activeAbility.action(gameObject);
-        else if(Input.GetKeyUp(KeyCode.W) || !activeAbility.actionCondition(gameObject))
+        else
             activeAbility.actionCleanUp(gameObject);
     }
 }

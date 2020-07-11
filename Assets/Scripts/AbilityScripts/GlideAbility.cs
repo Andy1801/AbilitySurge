@@ -16,7 +16,7 @@ public class GlideAbility : IAbilites
         if(originalGravity == 0)
             originalGravity = rigidbody2D.gravityScale;
 
-        return !playerMovement.getIsGrounded();
+        return Input.GetKey(KeyCode.W) && !playerMovement.getIsGrounded();
     }
 
     public void action(GameObject player)

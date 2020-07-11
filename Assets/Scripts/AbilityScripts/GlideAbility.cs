@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-<<<<<<< Updated upstream
-public class GlideAbility : IAbilites
-{   
-=======
+
 public class GlideAbility : IAbilities
 {
     private const float glidingGravity = 0f;
     private const float downwardSpeed = -2f;
->>>>>>> Stashed changes
+
     private const float X = 0f;
     private float originalGravity = 0f;
 

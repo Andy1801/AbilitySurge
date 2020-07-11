@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GlideAbility : IAbilites
-{
-    private const float glidingGravity = 0f;
-    private const float downwardSpeed = -5f;
+{   
     private const float X = 0f;
     private float originalGravity = 0f;
 
@@ -22,6 +20,9 @@ public class GlideAbility : IAbilites
 
     public void action(GameObject player)
     {
+        float downwardSpeed = -5f;
+        float glidingGravity = 0f;
+
         Rigidbody2D rigidbody2D = player.GetComponent<Rigidbody2D>();
 
         Vector2 downwardMovement = new Vector2(X, downwardSpeed);

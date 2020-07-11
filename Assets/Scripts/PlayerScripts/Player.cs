@@ -13,8 +13,9 @@ public class Player : MonoBehaviour
         activeAbility = new GlideAbility();
     }
 
+    // TODO: The small studder could be happening because ability movement is occuring every fixed update frame but movement is happening every update frame 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if(activeAbility.actionCondition(gameObject))
             activeAbility.action(gameObject);

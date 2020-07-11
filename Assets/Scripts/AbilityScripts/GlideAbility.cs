@@ -26,7 +26,7 @@ public class GlideAbility : IAbilities
 
         Rigidbody2D rigidbody2D = player.GetComponent<Rigidbody2D>();
 
-        Vector2 downwardMovement = new Vector2(X, downwardSpeed);
+        Vector2 downwardMovement = new Vector2(rigidbody2D.velocity.x, downwardSpeed);
 
         rigidbody2D.gravityScale = glidingGravity;
         rigidbody2D.velocity = downwardMovement;

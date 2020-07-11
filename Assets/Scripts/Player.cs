@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-
-    private Abilites activeAbility;
+    private IAbilites activeAbility;
 
     // Start is called before the first frame update
     void Start()

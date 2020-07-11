@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AbilityRotator : MonoBehaviour
 {
-    public int abilityTimerThershold;
+    public int abilityTimerThreshold;
 
     private float timer;
     private bool rotateAbility;
@@ -22,7 +22,7 @@ public class AbilityRotator : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if(timer > abilityTimerThershold)
+        if(timer > abilityTimerThreshold)
         {
             rotateAbility = true;
             timer = 0f;

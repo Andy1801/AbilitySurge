@@ -43,6 +43,17 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void OnCollisionStay2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Ground")
+        {
+            PlatformMovement platformMovement = other.gameObject.GetComponent<PlatformMovement>();
+
+            if(platformMovement != null)
+                transform.Translate(platformMovement.movementOffset * Time.deltaTime);
+        }
+    }
+
     void OnCollisionExit2D(Collision2D other)
     {
         if (other.gameObject.tag == "Ground")

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-interface IAbilites
+interface IAbilities
 {
     // Condition for performing the action
     bool actionCondition(GameObject player);

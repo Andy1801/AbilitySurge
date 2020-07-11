@@ -11,8 +11,10 @@ public class PlayerMovement : MonoBehaviour
     public float playerSpeed;
 
     public float jumpSpeed;
+    public float fallMultiplier = 2.5f;
+    public float lowJumpMultiplier = 1f;
 
-    private bool isGrounded = true;
+    private bool isGrounded = false;
 
     Rigidbody2D rigidbody;
 
@@ -27,10 +29,9 @@ public class PlayerMovement : MonoBehaviour
     {
         float moveHorizontal = Input.GetAxisRaw("Horizontal");
 
-        Jump();
-        Vector2 movement = new Vector2(moveHorizontal, 0);
 
-        transform.Translate(movement * Time.deltaTime * playerSpeed);
+        Jump();
+        rigidbody.velocity = new Vector2(moveHorizontal * playerSpeed, rigidbody.velocity.y);
     }
 
     //Checks if the player is on the ground whenever it has a collision
@@ -66,9 +67,18 @@ public class PlayerMovement : MonoBehaviour
     //Method that handles apllying the jumping force
     void Jump()
     {
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetKeyDown(KeyCode.W) && isGrounded)
         {
-            rigidbody.AddForce(new Vector2(0f, 5f), ForceMode2D.Impulse);
+            rigidbody.velocity = new Vector2(rigidbody.velocity.x, 0f);
+            rigidbody.velocity += Vector2.up * jumpSpeed;
+        }
+        if (rigidbody.velocity.y < 0)
+        {
+            rigidbody.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+        }
+        else if (rigidbody.velocity.y > 0 && !Input.GetKey(KeyCode.W))
+        {
+            rigidbody.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
     }
 

@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    IAbilites activeAbility;
+    IAbilities activeAbility;
 
     // Start is called before the first frame update
     void Start()
     {
         //For testing
-        activeAbility = new GlideAbility();
+        activeAbility = new DashAbility();
     }
 
     // TODO: The small studder could be happening because ability movement is occuring every fixed update frame but movement is happening every update frame 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(activeAbility.actionCondition(gameObject))
+        if (activeAbility.actionCondition(gameObject))
             activeAbility.action(gameObject);
         else
             activeAbility.actionCleanUp(gameObject);

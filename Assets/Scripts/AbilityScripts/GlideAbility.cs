@@ -2,8 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+<<<<<<< Updated upstream
 public class GlideAbility : IAbilites
 {   
+=======
+public class GlideAbility : IAbilities
+{
+    private const float glidingGravity = 0f;
+    private const float downwardSpeed = -2f;
+>>>>>>> Stashed changes
     private const float X = 0f;
     private float originalGravity = 0f;
 
@@ -12,10 +19,10 @@ public class GlideAbility : IAbilites
         PlayerMovement playerMovement = player.GetComponent<PlayerMovement>();
         Rigidbody2D rigidbody2D = player.GetComponent<Rigidbody2D>();
 
-        if(originalGravity == 0)
+        if (originalGravity == 0)
             originalGravity = rigidbody2D.gravityScale;
 
-        return Input.GetKey(KeyCode.W) && !playerMovement.getIsGrounded();
+        return Input.GetKey(KeyCode.Space) && !playerMovement.getIsGrounded();
     }
 
     public void action(GameObject player)
@@ -37,5 +44,5 @@ public class GlideAbility : IAbilites
 
         rigidbody2D.gravityScale = originalGravity;
     }
- 
+
 }

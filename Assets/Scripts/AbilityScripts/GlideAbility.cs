@@ -1,13 +1,10 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 
 public class GlideAbility : IAbilities
 {
-    private const float glidingGravity = 0f;
-    private const float downwardSpeed = -2f;
-
     private const float X = 0f;
     private float originalGravity = 0f;
 

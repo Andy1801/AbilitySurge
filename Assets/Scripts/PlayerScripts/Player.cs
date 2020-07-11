@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         //For testing
-        activeAbility = new TinyAbility();
+        activeAbility = new GlideAbility();
     }
 
     // Update is called once per frame

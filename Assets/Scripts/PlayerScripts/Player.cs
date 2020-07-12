@@ -9,9 +9,9 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        activeAbility = new DoubleJumpAbility();
-        // activeAbility = AbilityFactory.getRandomAbilities();
-        // abilityRotator = GetComponent<AbilityRotator>();
+        // activeAbility = new DoubleJumpAbility();
+        activeAbility = AbilityFactory.getRandomAbilities();
+        abilityRotator = GetComponent<AbilityRotator>();
     }
 
     // TODO: The small stutter could be happening because ability movement is occuring every fixed update frame but movement is happening every update frame 
@@ -25,11 +25,11 @@ public class Player : MonoBehaviour
 
     void LateUpdate()
     {
-        // IAbilities nextAbility = abilityRotator.GetAbilities();
-        // if (nextAbility != null)
-        // {
-        //     activeAbility.actionCleanUp(gameObject, true);
-        //     activeAbility = nextAbility;
-        // }
+        IAbilities nextAbility = abilityRotator.GetAbilities();
+        if (nextAbility != null)
+        {
+            activeAbility.actionCleanUp(gameObject, true);
+            activeAbility = nextAbility;
+        }
     }
 }

@@ -14,15 +14,15 @@ public class GlideAbility : IAbilities
     public bool actionCondition(GameObject player)
     {
         playerRenderer = player.GetComponent<MeshRenderer>();
-        playerMovement = player.GetComponent<PlayerMovement>();
         rigidbody2D = player.GetComponent<Rigidbody2D>();
 
         playerRenderer.material.SetColor("_Color", Color.blue);
+        Grounded grounded = player.GetComponentInChildren<Grounded>();
 
         if (originalGravity == 0)
             originalGravity = rigidbody2D.gravityScale;
 
-        return Input.GetKey(KeyCode.Space) && !playerMovement.getIsGrounded();
+        return Input.GetKey(KeyCode.Space) && !grounded.getIsGrounded();
     }
 
     public void action(GameObject player)

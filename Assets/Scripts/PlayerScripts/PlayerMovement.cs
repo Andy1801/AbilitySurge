@@ -13,13 +13,13 @@ public class PlayerMovement : MonoBehaviour
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 1f;
 
-    private bool isGrounded = false;
-
     Rigidbody2D rigidbody2d;
+    Grounded grounded;
 
     void Start()
     {
         rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
+        grounded = gameObject.GetComponentInChildren<Grounded>();
     }
 
     void Update()
@@ -31,40 +31,10 @@ public class PlayerMovement : MonoBehaviour
         rigidbody2d.velocity = new Vector2(moveHorizontal * playerSpeed, rigidbody2d.velocity.y);
     }
 
-    //Checks if the player is on the ground whenever it has a collision
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Ground")
-        {
-            isGrounded = true;
-            Debug.Log("Grounded");
-        }
-    }
-
-    void OnCollisionStay2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Ground")
-        {
-            PlatformMovement platformMovement = other.gameObject.GetComponent<PlatformMovement>();
-
-            if (platformMovement != null)
-                transform.Translate(platformMovement.movementOffset * Time.deltaTime);
-        }
-    }
-
-    void OnCollisionExit2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Ground")
-        {
-            isGrounded = false;
-            Debug.Log("Flying");
-        }
-    }
-
     //Method that handles applying the jumping force
     void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.W) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.W) && grounded.getIsGrounded())
         {
             rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, 0f);
             rigidbody2d.velocity += Vector2.up * jumpSpeed;
@@ -77,10 +47,5 @@ public class PlayerMovement : MonoBehaviour
         {
             rigidbody2d.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
-    }
-
-    public bool getIsGrounded()
-    {
-        return isGrounded;
     }
 }

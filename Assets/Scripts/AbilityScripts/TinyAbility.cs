@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//TODO: When the player turns tiny they are falling. They should be on the ground at the momemnt that they turn tiny as to remove a jump
+//TODO: When the player turns tiny they are falling. They should be on the ground at the moment that they turn tiny as to remove a jump
 public class TinyAbility : IAbilities
 {
     private const float X = 0.5f;
@@ -30,7 +30,7 @@ public class TinyAbility : IAbilities
         transform.localScale = tinyScale;
     }
 
-    public void actionCleanUp(GameObject player)
+    public void actionCleanUp(GameObject player, bool strictCleanup)
     {
         Transform transform = player.GetComponent<Transform>();
 

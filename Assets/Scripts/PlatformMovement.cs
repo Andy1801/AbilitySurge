@@ -5,10 +5,10 @@ using UnityEngine;
 //TODO Platform studdering when the player gets on it
 public class PlatformMovement : MonoBehaviour
 {
-    public float movementTimer;
-    public Vector3 movementOffset;
-
     private float timer;
+    public float movementTimer;
+
+    public Vector3 movementOffset;
 
     // Start is called before the first frame update
     void Start()
@@ -21,15 +21,15 @@ public class PlatformMovement : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if(timer >= movementTimer)
-            movementOffset = reversalMovementAndTimer();      
+        if (timer >= movementTimer)
+            movementOffset = reversalMovementAndTimer();
         else
             transform.position += (movementOffset * Time.deltaTime);
     }
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.tag == "Ground")
+        if (other.gameObject.tag == "Ground")
             movementOffset = reversalMovementAndTimer();
     }
 

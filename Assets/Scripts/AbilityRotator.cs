@@ -5,7 +5,6 @@ using UnityEngine;
 public class AbilityRotator : MonoBehaviour
 {
     public int abilityTimerThreshold;
-
     private float timer;
     private bool rotateAbility;
 
@@ -14,7 +13,6 @@ public class AbilityRotator : MonoBehaviour
     {
         timer = 0f;
         rotateAbility = false;
-        Debug.Log("Testing Rotator");
     }
 
     // Update is called once per frame
@@ -22,7 +20,7 @@ public class AbilityRotator : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if(timer > abilityTimerThreshold)
+        if (timer > abilityTimerThreshold)
         {
             rotateAbility = true;
             timer = 0f;
@@ -31,11 +29,10 @@ public class AbilityRotator : MonoBehaviour
 
     public IAbilities GetAbilities()
     {
-        if(rotateAbility)
+        if (rotateAbility)
         {
-            Debug.Log("Swapping abilites");
             rotateAbility = false;
-            return AbilityFactory.getRandomAbilites();
+            return AbilityFactory.getRandomAbilities();
         }
 
         return null;

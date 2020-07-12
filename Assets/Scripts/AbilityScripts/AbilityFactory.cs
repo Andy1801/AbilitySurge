@@ -4,19 +4,20 @@ using UnityEngine;
 
 public static class AbilityFactory
 {
-     static List<string> abilityList = new List<string>();
+    static List<string> abilityList = new List<string>();
 
     static AbilityFactory()
     {
         abilityList.Add("gliding");
         abilityList.Add("tiny");
+        abilityList.Add("dash");
     }
 
-    public static IAbilities getRandomAbilites()
+    public static IAbilities getRandomAbilities()
     {
         //Get a random item from list
         string abilityName = abilityList.ToArray()[Random.Range(0, abilityList.Count)];
-
+        Debug.Log(abilityName);
         return GetAbilities(abilityName);
     }
 
@@ -28,6 +29,8 @@ public static class AbilityFactory
                 return new GlideAbility();
             case "tiny":
                 return new TinyAbility();
+            case "dash":
+                return new DashAbility();
             default:
                 return null;
         }

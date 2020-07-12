@@ -9,29 +9,26 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float playerSpeed;
-
     public float jumpSpeed;
     public float fallMultiplier = 2.5f;
     public float lowJumpMultiplier = 1f;
 
     private bool isGrounded = false;
 
-    Rigidbody2D rigidbody;
+    Rigidbody2D rigidbody2d;
 
-    // Start is called before the first frame update
     void Start()
     {
-        rigidbody = gameObject.GetComponent<Rigidbody2D>();
+        rigidbody2d = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         float moveHorizontal = Input.GetAxisRaw("Horizontal");
 
 
         Jump();
-        rigidbody.velocity = new Vector2(moveHorizontal * playerSpeed, rigidbody.velocity.y);
+        rigidbody2d.velocity = new Vector2(moveHorizontal * playerSpeed, rigidbody2d.velocity.y);
     }
 
     //Checks if the player is on the ground whenever it has a collision
@@ -46,11 +43,11 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionStay2D(Collision2D other)
     {
-        if(other.gameObject.tag == "Ground")
+        if (other.gameObject.tag == "Ground")
         {
             PlatformMovement platformMovement = other.gameObject.GetComponent<PlatformMovement>();
 
-            if(platformMovement != null)
+            if (platformMovement != null)
                 transform.Translate(platformMovement.movementOffset * Time.deltaTime);
         }
     }
@@ -64,21 +61,21 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    //Method that handles apllying the jumping force
+    //Method that handles applying the jumping force
     void Jump()
     {
         if (Input.GetKeyDown(KeyCode.W) && isGrounded)
         {
-            rigidbody.velocity = new Vector2(rigidbody.velocity.x, 0f);
-            rigidbody.velocity += Vector2.up * jumpSpeed;
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, 0f);
+            rigidbody2d.velocity += Vector2.up * jumpSpeed;
         }
-        if (rigidbody.velocity.y < 0)
+        if (rigidbody2d.velocity.y < 0)
         {
-            rigidbody.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
+            rigidbody2d.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
         }
-        else if (rigidbody.velocity.y > 0 && !Input.GetKey(KeyCode.W))
+        else if (rigidbody2d.velocity.y > 0 && !Input.GetKey(KeyCode.W))
         {
-            rigidbody.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
+            rigidbody2d.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }
     }
 

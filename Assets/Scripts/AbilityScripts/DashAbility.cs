@@ -11,9 +11,13 @@ public class DashAbility : IAbilities
 
     private Rigidbody2D rigidbody2D;
     private PlayerMovement playerMovement;
+    private Renderer playerRenderer;
 
     public bool actionCondition(GameObject player)
     {
+        playerRenderer = player.GetComponent<MeshRenderer>();
+        playerRenderer.material.SetColor("_Color", Color.yellow);
+
         if (Input.GetKeyDown(KeyCode.Space) && !dashing)
         {
             dashing = true;
@@ -29,7 +33,6 @@ public class DashAbility : IAbilities
 
         rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
         playerMovement.playerSpeed = playerMovement.playerSpeed + 40;
-
     }
 
     public void actionCleanUp(GameObject player, bool strictCleanup)
@@ -46,5 +49,4 @@ public class DashAbility : IAbilities
             }
         }
     }
-
 }

@@ -8,14 +8,12 @@ public class AbilityRotator : MonoBehaviour
     private float timer;
     private bool rotateAbility;
 
-    // Start is called before the first frame update
     void Start()
     {
         timer = 0f;
         rotateAbility = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;

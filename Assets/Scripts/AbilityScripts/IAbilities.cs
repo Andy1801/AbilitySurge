@@ -5,7 +5,7 @@ public interface IAbilities
     // Condition for performing the action
     bool actionCondition(GameObject player);
 
-    // Action being performing 
+    // Action being performed
     void action(GameObject player);
 
     //Clean up for the action performed

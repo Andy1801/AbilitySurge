@@ -10,13 +10,11 @@ public class PlatformMovement : MonoBehaviour
 
     public Vector3 movementOffset;
 
-    // Start is called before the first frame update
     void Start()
     {
         timer = 0f;
     }
 
-    // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;

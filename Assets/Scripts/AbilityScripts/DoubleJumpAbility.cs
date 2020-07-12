@@ -7,7 +7,8 @@ public class DoubleJumpAbility : IAbilities
     private PlayerMovement playerMovement;
     private Renderer playerRenderer;
     private Rigidbody2D rigidbody2d;
-    private bool canJump;
+    private bool canJump = true;
+    private bool jumping;
     private Grounded grounded;
 
     // Condition for performing the action
@@ -19,22 +20,30 @@ public class DoubleJumpAbility : IAbilities
         grounded = player.GetComponentInChildren<Grounded>();
         playerRenderer.material.SetColor("_Color", Color.green);
 
-        if (Input.GetKeyDown(KeyCode.W) && canJump)
+        if (Input.GetKeyDown(KeyCode.W) && !grounded.getIsGrounded() && canJump)
         {
-            canJump = true;
+            jumping = true;
+            canJump = false;
+            return jumping;
         }
         else if (grounded.getIsGrounded())
         {
             canJump = true;
         }
-        return canJump;
+        return jumping;
     }
 
     // Action being performed 
     public void action(GameObject player)
     {
-        rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, 0f);
-        rigidbody2d.velocity += Vector2.up * playerMovement.jumpSpeed;
+
+        if (jumping)
+        {
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, 0f);
+            rigidbody2d.velocity += Vector2.up * playerMovement.jumpSpeed;
+            jumping = false;
+        }
+
         if (rigidbody2d.velocity.y < 0)
         {
             rigidbody2d.velocity += Vector2.up * Physics2D.gravity.y * (playerMovement.fallMultiplier - 1) * Time.deltaTime;

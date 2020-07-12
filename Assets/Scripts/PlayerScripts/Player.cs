@@ -9,7 +9,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        // activeAbility = new DoubleJumpAbility();
+        //activeAbility = new DoubleJumpAbility();
         activeAbility = AbilityFactory.getRandomAbilities();
         abilityRotator = GetComponent<AbilityRotator>();
     }

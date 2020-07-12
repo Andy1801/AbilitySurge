@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 5782690789909113002}
   - component: {fileID: 7702152105828556127}
   - component: {fileID: 1638258319921935737}
+  - component: {fileID: -5192638949423012163}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -243,3 +244,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   abilityTimerThreshold: 2
+--- !u!114 &-5192638949423012163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8660325100290474044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04a237ecdaf9d92488a30c7211b941fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

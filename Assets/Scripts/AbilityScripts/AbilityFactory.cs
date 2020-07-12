@@ -11,6 +11,7 @@ public static class AbilityFactory
         abilityList.Add("gliding");
         abilityList.Add("tiny");
         abilityList.Add("dash");
+        abilityList.Add("doubleJump");
     }
 
     public static IAbilities getRandomAbilities()
@@ -31,6 +32,8 @@ public static class AbilityFactory
                 return new TinyAbility();
             case "dash":
                 return new DashAbility();
+            case "doubleJump":
+                return new DoubleJumpAbility();
             default:
                 return null;
         }

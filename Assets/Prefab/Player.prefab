@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8660325100290474019}
   - component: {fileID: 5782690789909113002}
   - component: {fileID: 7702152105828556127}
+  - component: {fileID: 1638258319921935737}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -129,7 +130,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &5782690789909113002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,5 +155,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 185de8b284c9a0445bdbd77b8160c600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 10
-  jumpSpeed: 2
+  playerSpeed: 15
+  jumpSpeed: 7
+  fallMultiplier: 4
+  lowJumpMultiplier: 2
+--- !u!114 &1638258319921935737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8660325100290474044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ee3100d3717eba469aae141364654ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityTimerThreshold: 2

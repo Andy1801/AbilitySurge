@@ -21,7 +21,7 @@ public class GlideAbility : IAbilities
 
     public void action(GameObject player)
     {
-        float downwardSpeed = -5f;
+        float downwardSpeed = -2f;
         float glidingGravity = 0f;
 
         Rigidbody2D rigidbody2D = player.GetComponent<Rigidbody2D>();
@@ -32,7 +32,7 @@ public class GlideAbility : IAbilities
         rigidbody2D.velocity = downwardMovement;
     }
 
-    public void actionCleanUp(GameObject player)
+    public void actionCleanUp(GameObject player, bool strictCleanup)
     {
         Rigidbody2D rigidbody2D = player.GetComponent<Rigidbody2D>();
 

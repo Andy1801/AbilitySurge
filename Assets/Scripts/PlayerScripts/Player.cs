@@ -10,27 +10,26 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        activeAbility = AbilityFactory.getRandomAbilites();
+        activeAbility = AbilityFactory.getRandomAbilities();
         abilityRotator = GetComponent<AbilityRotator>();
     }
 
-    // TODO: The small studder could be happening because ability movement is occuring every fixed update frame but movement is happening every update frame 
+    // TODO: The small stutter could be happening because ability movement is occuring every fixed update frame but movement is happening every update frame 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (activeAbility.actionCondition(gameObject))
             activeAbility.action(gameObject);
         else
-            activeAbility.actionCleanUp(gameObject);
+            activeAbility.actionCleanUp(gameObject, false);
     }
 
     void LateUpdate()
     {
         IAbilities nextAbility = abilityRotator.GetAbilities();
-
-        if(nextAbility != null)
+        if (nextAbility != null)
         {
-            activeAbility.actionCleanUp(gameObject);
+            activeAbility.actionCleanUp(gameObject, true);
             activeAbility = nextAbility;
         }
     }

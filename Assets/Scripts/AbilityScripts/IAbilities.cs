@@ -9,5 +9,6 @@ public interface IAbilities
     void action(GameObject player);
 
     //Clean up for the action performed
-    void actionCleanUp(GameObject player);
+    void actionCleanUp(GameObject player, bool strictCleanup);
+
 }

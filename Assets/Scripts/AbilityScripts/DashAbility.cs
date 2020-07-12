@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//TODO: Make a cool down timer so you can't dash to infinity and beyond
 public class DashAbility : IAbilities
 {
     private bool dashing;
+    private bool coolDown;
 
+    private float coolDownTimer;
     private float timer;
     private float dashTime = 0.15f;
 
@@ -17,6 +20,7 @@ public class DashAbility : IAbilities
     {
         playerRenderer = player.GetComponent<MeshRenderer>();
         playerRenderer.material.SetColor("_Color", Color.yellow);
+
 
         if (Input.GetKeyDown(KeyCode.Space) && !dashing)
         {

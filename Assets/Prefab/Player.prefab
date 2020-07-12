@@ -242,4 +242,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ee3100d3717eba469aae141364654ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityTimerThreshold: 2
+  abilityTimerThreshold: 5

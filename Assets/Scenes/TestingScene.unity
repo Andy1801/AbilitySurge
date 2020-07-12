@@ -762,6 +762,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6876687499954355238, guid: 2c1e1aa6a8e16d54e86a44b2a870e0ff,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7702152105828556127, guid: 2c1e1aa6a8e16d54e86a44b2a870e0ff,
         type: 3}
       propertyPath: jumpSpeed
@@ -807,6 +812,11 @@ PrefabInstance:
       propertyPath: m_DynamicOccludee
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8660325100290474018, guid: 2c1e1aa6a8e16d54e86a44b2a870e0ff,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 9dc8350a81647374ab46d2fab4171ce7, type: 2}
     - target: {fileID: 8660325100290474019, guid: 2c1e1aa6a8e16d54e86a44b2a870e0ff,
         type: 3}
       propertyPath: m_Constraints

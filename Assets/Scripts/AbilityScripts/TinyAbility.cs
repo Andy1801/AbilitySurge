@@ -19,7 +19,6 @@ public class TinyAbility : IAbilities
         playerRenderer.material.SetColor("_Color", Color.white);
 
         Transform transform = player.GetComponent<Transform>();
-        Debug.Log(transform);
 
         if (originalScale == Vector3.zero)
             originalScale = transform.localScale;

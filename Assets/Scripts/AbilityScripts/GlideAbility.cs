@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//TODO: Make the downward force of gliding be more gradual well jump as to make it feel as if all momentum has been stopped
 public class GlideAbility : IAbilities
 {
     private const float X = 0f;

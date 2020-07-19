@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //TODO: When the player turns tiny they are falling. They should be on the ground at the moment that they turn tiny as to remove a jump
+//TODO: Turning tiny should also change your mass so that you feel different from your original size
 public class TinyAbility : IAbilities
 {
     private const float X = 0.5f, Y = 0.5f, Z = 1f;

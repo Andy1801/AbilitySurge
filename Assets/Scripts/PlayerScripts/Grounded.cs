@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//TODO: Change the grounded class logic to use ray casting
+//TODO: Move platforming moving logic to the platform movement class as to decouple the code more
 public class Grounded : MonoBehaviour
 {
 

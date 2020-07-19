@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//TODO: Do some research as to how to preform better spawning of enemies
 public class EnemySpawn : MonoBehaviour
 {
     public GameObject[] enemyList;

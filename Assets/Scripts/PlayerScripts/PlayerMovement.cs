@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//TODO Fix jumping by applying physics forces 
 //TODO Fix side collision when jumping
 //TODO Add jump counter (???) 
-
+//TODO Look into how update, fixedUpdate, and lateUpdate actually works and how it relates to movement. Should we be using update to move the character using physic forces
+//TODO Think about what type movement would be better. Physic forces movement or transformer movement.
 public class PlayerMovement : MonoBehaviour
 {
     public float playerSpeed;

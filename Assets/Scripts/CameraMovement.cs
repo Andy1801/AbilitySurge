@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //TODO Fix camera vertical movement
-
+//TODO Think about removing/rewriting
 public class CameraMovement : MonoBehaviour
 {
 

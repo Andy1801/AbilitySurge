@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//TODO: Think about momentum ALOT!!!!
+//TODO: Think about making the jump less floaty so that the double feels more rewarding to have
+//TODO: Change double jump so that it modifies a counter in the player character to give them a double jump and remove the current logic
 public class DoubleJumpAbility : IAbilities
 {
     private PlayerMovement playerMovement;

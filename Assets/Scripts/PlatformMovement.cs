@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //TODO Platform studdering when the player gets on it
+//TODO Move logic from grounded to here that involves moving the player when atop the platfom
 public class PlatformMovement : MonoBehaviour
 {
     private float timer;

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//TODO: Change with timer classes when implemented 
 public class AbilityRotator : MonoBehaviour
 {
     public int abilityTimerThreshold;

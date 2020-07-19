@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//TODO: The dash ability seems to stop you mid air if you are not holding a certain direction
+//TODO: Think about adding directional movement
+//TODO: Move timer logic once timer class has been created
+//TODO: Move Rendering logic to the ability rotator rather 
 public class DashAbility : IAbilities
 {
     private bool dashing;

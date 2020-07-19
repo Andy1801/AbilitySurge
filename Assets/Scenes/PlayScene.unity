@@ -504,7 +504,12 @@ PrefabInstance:
     - target: {fileID: 7979949878917894037, guid: 2517cae728a719d4f8f59fc61d313fdb,
         type: 3}
       propertyPath: m_Name
-      value: Enemy Spawn Parent
+      value: EnemySpawnParent
+      objectReference: {fileID: 0}
+    - target: {fileID: 7979949878917894037, guid: 2517cae728a719d4f8f59fc61d313fdb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7979949878917894038, guid: 2517cae728a719d4f8f59fc61d313fdb,
         type: 3}

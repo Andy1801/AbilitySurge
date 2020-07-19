@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//TODO: Move all logic relating to ability factory into the rotator
+//TODO: See if you can move ability rotator logic into its own class
+//TODO: Create timer class to remove code reuse
 public class Player : MonoBehaviour
 {
     IAbilities activeAbility;

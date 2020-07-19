@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// TODO: Look up how a factory pattern should actually be built. Make some form of having the class be able to communicate the type that it should be
+// TODO: Think about a pub/sub pattern approach in order to fix the factory 
 public static class AbilityFactory
 {
     static List<string> abilityList = new List<string>();

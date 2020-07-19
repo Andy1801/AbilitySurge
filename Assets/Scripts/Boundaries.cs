@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//TODO: See if I can add the camera offset to the position to keep the boundaries correct without it being in position zero
 public class Boundaries : MonoBehaviour
 {
     private Vector2 screenBounds;

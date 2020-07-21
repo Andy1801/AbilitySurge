@@ -11,14 +11,14 @@ public class GlideAbility : IAbilities
     private Renderer playerRenderer;
     private PlayerMovement playerMovement;
     private Rigidbody2D rigidbody2D;
+    private Grounded grounded;
 
     public bool actionCondition(GameObject player)
     {
-        playerRenderer = player.GetComponent<MeshRenderer>();
         rigidbody2D = player.GetComponent<Rigidbody2D>();
-
+        grounded = player.GetComponentInChildren<Grounded>();
+        playerRenderer = player.GetComponent<MeshRenderer>();
         playerRenderer.material.SetColor("_Color", Color.blue);
-        Grounded grounded = player.GetComponentInChildren<Grounded>();
 
         if (originalGravity == 0)
             originalGravity = rigidbody2D.gravityScale;

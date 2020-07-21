@@ -31,7 +31,6 @@ public class Player : MonoBehaviour
         IAbilities nextAbility = abilityRotator.GetAbilities();
         if (nextAbility != null)
         {
-
             activeAbility.actionCleanUp(gameObject, true);
             activeAbility = nextAbility;
         }

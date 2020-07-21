@@ -37,8 +37,11 @@ public class DashAbility : IAbilities
         grounded = player.GetComponentInChildren<Grounded>();
         rigidbody2D = player.GetComponent<Rigidbody2D>();
         playerMovement = player.GetComponent<PlayerMovement>();
-        dashClone = MonoBehaviour.Instantiate(playerMovement.dashEffect, rigidbody2D.position, Quaternion.identity);
+
+        MonoBehaviour.Instantiate(playerMovement.dashEffect, rigidbody2D.position, Quaternion.identity);
+
         rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+
         playerMovement.playerSpeed = playerMovement.playerSpeed + 40;
     }
 

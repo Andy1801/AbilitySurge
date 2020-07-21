@@ -28,13 +28,17 @@ public class GlideAbility : IAbilities
 
     public void action(GameObject player)
     {
-        float downwardSpeed = -2f;
-        float glidingGravity = 0f;
+        if (rigidbody2D.velocity.y < 0)
+        {
+            float downwardSpeed = -1f;
+            float glidingGravity = 0f;
 
-        Vector2 downwardMovement = new Vector2(rigidbody2D.velocity.x, downwardSpeed);
+            Vector2 downwardMovement = new Vector2(rigidbody2D.velocity.x, downwardSpeed);
 
-        rigidbody2D.gravityScale = glidingGravity;
-        rigidbody2D.velocity = downwardMovement;
+            rigidbody2D.gravityScale = glidingGravity;
+            rigidbody2D.velocity = downwardMovement;
+        }
+
     }
 
     public void actionCleanUp(GameObject player, bool strictCleanup)

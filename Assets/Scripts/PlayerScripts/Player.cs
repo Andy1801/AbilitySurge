@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        //activeAbility = new DoubleJumpAbility();
+        //activeAbility = new DashAbility();
         activeAbility = AbilityFactory.getRandomAbilities();
         abilityRotator = GetComponent<AbilityRotator>();
     }
@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
         IAbilities nextAbility = abilityRotator.GetAbilities();
         if (nextAbility != null)
         {
+
             activeAbility.actionCleanUp(gameObject, true);
             activeAbility = nextAbility;
         }

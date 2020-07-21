@@ -43,18 +43,10 @@ public class DoubleJumpAbility : IAbilities
         if (jumping)
         {
             rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, 0f);
-            rigidbody2d.velocity += Vector2.up * playerMovement.jumpSpeed;
+            rigidbody2d.velocity += Vector2.up * playerMovement.jumpForce * 2;
             jumping = false;
         }
 
-        if (rigidbody2d.velocity.y < 0)
-        {
-            rigidbody2d.velocity += Vector2.up * Physics2D.gravity.y * (playerMovement.fallMultiplier - 1) * Time.deltaTime;
-        }
-        else if (rigidbody2d.velocity.y > 0 && !Input.GetKey(KeyCode.W))
-        {
-            rigidbody2d.velocity += Vector2.up * Physics2D.gravity.y * (playerMovement.lowJumpMultiplier - 1) * Time.deltaTime;
-        }
     }
 
     //Clean up for the action performed

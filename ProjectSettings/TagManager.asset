@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Spawnpoint
+  - Clone
   layers:
   - Default
   - TransparentFX

@@ -13,10 +13,10 @@ public class PlayerMovement : MonoBehaviour
 
     private Player player;
     private Grounded grounded;
+    private Timer timer;
 
     private float moveInput;
 
-    private float jumpTimeCounter;
     public float jumpTime;
 
     private bool isJumping;
@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
         player = GetComponent<Player>();
         rb = GetComponent<Rigidbody2D>();
         grounded = player.GetComponentInChildren<Grounded>();
+        timer = new Timer(jumpTime);
     }
 
     // Update is called once per frame
@@ -48,20 +49,15 @@ public class PlayerMovement : MonoBehaviour
         if (grounded.getIsGrounded() == true && Input.GetKeyDown(KeyCode.W))
         {
             isJumping = true;
-            jumpTimeCounter = jumpTime;
+            timer.StartTimer();
             rb.velocity = Vector2.up * jumpForce;
         }
         if (Input.GetKey(KeyCode.W))
         {
-            if (jumpTimeCounter > 0 && isJumping == true)
-            {
+            if (!timer.getTimerStatus() && isJumping)
                 rb.velocity = Vector2.up * jumpForce;
-                jumpTimeCounter -= Time.deltaTime;
-            }
             else
-            {
                 isJumping = false;
-            }
         }
 
         if (Input.GetKeyUp(KeyCode.W))

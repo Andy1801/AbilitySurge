@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        activeAbility = new GlideAbility();
+        activeAbility = new TinyAbility();
         // activeAbility = AbilityFactory.getRandomAbilities();
         // abilityRotator = GetComponent<AbilityRotator>();
     }

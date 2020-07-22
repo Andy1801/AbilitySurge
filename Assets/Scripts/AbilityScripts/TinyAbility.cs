@@ -11,33 +11,39 @@ public class TinyAbility : IAbilities
     Vector3 originalScale = Vector3.zero;
     Vector3 tinyScale = new Vector3(X, Y, Z);
 
+    float originalGravity = 0f;
+    float tinyGravity = 3f;
+
     private Renderer playerRenderer;
     private Transform transform;
+    private Rigidbody2D rigidbody2D;
 
     public bool actionCondition(GameObject player)
     {
         playerRenderer = player.GetComponent<MeshRenderer>();
         playerRenderer.material.SetColor("_Color", Color.white);
 
-        Transform transform = player.GetComponent<Transform>();
+        transform = player.GetComponent<Transform>();
+        rigidbody2D = player.GetComponent<Rigidbody2D>();
 
         if (originalScale == Vector3.zero)
+        {
             originalScale = transform.localScale;
+            originalGravity = rigidbody2D.gravityScale;
+        }
 
         return Input.GetKey(KeyCode.Space);
     }
 
     public void action(GameObject player)
     {
-        transform = player.GetComponent<Transform>();
-
+        rigidbody2D.gravityScale = tinyGravity;
         transform.localScale = tinyScale;
     }
 
     public void actionCleanUp(GameObject player, bool strictCleanup)
     {
-        transform = player.GetComponent<Transform>();
-
+        rigidbody2D.gravityScale = originalGravity;
         transform.localScale = originalScale;
     }
 }

@@ -7,18 +7,20 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
+    public GameObject dashEffect;
     public float playerSpeed;
-    private float moveInput;
     public float jumpForce;
 
     private Player player;
     private Grounded grounded;
 
-    public GameObject dashEffect;
+    private float moveInput;
 
     private float jumpTimeCounter;
     public float jumpTime;
+
     private bool isJumping;
+    private int jumpsLeft;
 
     // Start is called before the first frame update
     void Start()
@@ -31,12 +33,13 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        moveInput = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(moveInput * playerSpeed, rb.velocity.y);
     }
 
     void Update()
     {
+        moveInput = Input.GetAxisRaw("Horizontal");
+
         Jump();
     }
 

@@ -5,7 +5,7 @@ using UnityEngine;
 //TODO: Make the downward force of gliding be more gradual well jump as to make it feel as if all momentum has been stopped
 public class GlideAbility : IAbilities
 {
-    private const float X = 0f;
+    private const float lerpTime = 0.2f;
     private float originalGravity = 0f;
 
     private Renderer playerRenderer;
@@ -28,17 +28,14 @@ public class GlideAbility : IAbilities
 
     public void action(GameObject player)
     {
-        if (rigidbody2D.velocity.y < 0)
-        {
-            float downwardSpeed = -1f;
-            float glidingGravity = 0f;
+        float downwardSpeed = -2f;
+        float glidingGravity = 0f;
 
-            Vector2 downwardMovement = new Vector2(rigidbody2D.velocity.x, downwardSpeed);
+        Vector2 downwardMovement = new Vector2(rigidbody2D.velocity.x, downwardSpeed);
 
-            rigidbody2D.gravityScale = glidingGravity;
-            rigidbody2D.velocity = downwardMovement;
-        }
 
+        rigidbody2D.gravityScale = glidingGravity;
+        rigidbody2D.velocity = Vector2.Lerp(rigidbody2D.velocity, downwardMovement, lerpTime);
     }
 
     public void actionCleanUp(GameObject player, bool strictCleanup)

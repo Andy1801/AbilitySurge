@@ -392,7 +392,7 @@ PrefabInstance:
     - target: {fileID: 7760601248164260566, guid: 8b891aa71f8caa9419232041d899ed2d,
         type: 3}
       propertyPath: movementOffset.x
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b891aa71f8caa9419232041d899ed2d, type: 3}
@@ -407,6 +407,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1638258319921935737, guid: 2c1e1aa6a8e16d54e86a44b2a870e0ff,
+        type: 3}
+      propertyPath: abilityTimerThreshold
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8660325100290474019, guid: 2c1e1aa6a8e16d54e86a44b2a870e0ff,
         type: 3}

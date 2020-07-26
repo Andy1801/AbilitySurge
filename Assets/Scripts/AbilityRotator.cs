@@ -6,23 +6,23 @@ using UnityEngine;
 public class AbilityRotator : MonoBehaviour
 {
     public int abilityTimerThreshold;
-    private float timer;
+    private Timer timer;
     private bool rotateAbility;
 
     void Start()
     {
-        timer = 0f;
+        timer = new Timer(abilityTimerThreshold);
+        timer.StartTimer();
         rotateAbility = false;
     }
 
     void Update()
     {
-        timer += Time.deltaTime;
 
-        if (timer > abilityTimerThreshold)
+        if (timer.getTimerStatus())
         {
             rotateAbility = true;
-            timer = 0f;
+            timer.StartTimer();
         }
     }
 

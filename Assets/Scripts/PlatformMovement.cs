@@ -6,21 +6,20 @@ using UnityEngine;
 //TODO Move logic from grounded to here that involves moving the player when atop the platfom
 public class PlatformMovement : MonoBehaviour
 {
-    private float timer;
     public float movementTimer;
-
     public Vector3 movementOffset;
+
+    private Timer timer;
 
     void Start()
     {
-        timer = 0f;
+        timer = new Timer(movementTimer);
+        timer.StartTimer();
     }
 
     void Update()
     {
-        timer += Time.deltaTime;
-
-        if (timer >= movementTimer)
+        if (timer.getTimerStatus())
             movementOffset = reversalMovementAndTimer();
         else
             transform.position += (movementOffset * Time.deltaTime);
@@ -32,9 +31,15 @@ public class PlatformMovement : MonoBehaviour
             movementOffset = reversalMovementAndTimer();
     }
 
+    void OnCollisionStay2D(Collision2D other)
+    {
+        Transform transform = other.gameObject.GetComponent<Transform>();
+        transform.Translate(movementOffset * Time.deltaTime, Space.World);
+    }
+
     Vector3 reversalMovementAndTimer()
     {
-        timer = 0f;
+        timer.StartTimer();
         return movementOffset *= -1;
     }
 }

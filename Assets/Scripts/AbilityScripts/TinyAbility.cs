@@ -17,6 +17,8 @@ public class TinyAbility : IAbilities
     private Transform transform;
     private Rigidbody2D rigidbody2D;
 
+    private bool notTiny = true;
+
     public bool actionCondition(GameObject player)
     {
         playerRenderer = player.GetComponent<MeshRenderer>();
@@ -36,13 +38,22 @@ public class TinyAbility : IAbilities
 
     public void action(GameObject player)
     {
+
         rigidbody2D.gravityScale = tinyGravity;
         transform.localScale = tinyScale;
+
+        if (notTiny)
+        {
+            float verticalSizeChange = playerRenderer.bounds.extents.y;
+            transform.position = new Vector3(transform.position.x, transform.position.y - verticalSizeChange, transform.position.z);
+            notTiny = false;
+        }
     }
 
     public void actionCleanUp(GameObject player, bool strictCleanup)
     {
         rigidbody2D.gravityScale = originalGravity;
         transform.localScale = originalScale;
+        notTiny = true;
     }
 }

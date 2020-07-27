@@ -10,7 +10,7 @@ public class DashAbility : IAbilities
 {
     private bool dashing;
 
-    private float timer;
+    private Timer timer;
     private float dashTime = 0.15f;
 
     private GameObject dashClone;
@@ -24,9 +24,13 @@ public class DashAbility : IAbilities
         playerRenderer = player.GetComponent<MeshRenderer>();
         playerRenderer.material.SetColor("_Color", Color.yellow);
 
+        if (timer == null)
+            timer = new Timer(dashTime);
+
         if (Input.GetKeyDown(KeyCode.Space) && !dashing)
         {
             dashing = true;
+            timer.StartTimer();
             return dashing;
         }
         return false;
@@ -49,12 +53,10 @@ public class DashAbility : IAbilities
     {
         if (dashing)
         {
-            timer += Time.deltaTime;
-            if (timer > dashTime || strictCleanup)
+            if (timer.getTimerStatus() || strictCleanup)
             {
                 rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
                 playerMovement.playerSpeed = playerMovement.playerSpeed - 40;
-                timer = 0f;
                 dashing = false;
             }
         }

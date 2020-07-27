@@ -8,11 +8,13 @@ public class Grounded : MonoBehaviour
 {
 
     private bool isGrounded;
+    private Transform playerTransform;
 
     // Start is called before the first frame update
     void Start()
     {
         isGrounded = false;
+        playerTransform = GetComponentInParent<Transform>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -30,17 +32,6 @@ public class Grounded : MonoBehaviour
         {
             isGrounded = false;
             Debug.Log("Flying");
-        }
-    }
-
-    void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Ground")
-        {
-            PlatformMovement platformMovement = other.gameObject.GetComponent<PlatformMovement>();
-
-            if (platformMovement != null)
-                transform.Translate(platformMovement.movementOffset * Time.deltaTime);
         }
     }
 

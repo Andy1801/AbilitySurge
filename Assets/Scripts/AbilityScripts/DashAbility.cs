@@ -4,27 +4,32 @@ using UnityEngine;
 
 //TODO: The dash ability seems to stop you mid air if you are not holding a certain direction
 //TODO: Think about adding directional movement
-//TODO: Move timer logic once timer class has been created
 //TODO: Move Rendering logic to the ability rotator rather 
 public class DashAbility : IAbilities
 {
     private bool dashing;
 
-    private float timer;
+    private Timer timer;
     private float dashTime = 0.15f;
 
+    private GameObject dashClone;
     private Rigidbody2D rigidbody2D;
     private PlayerMovement playerMovement;
     private Renderer playerRenderer;
+    private Grounded grounded;
 
     public bool actionCondition(GameObject player)
     {
         playerRenderer = player.GetComponent<MeshRenderer>();
         playerRenderer.material.SetColor("_Color", Color.yellow);
 
+        if (timer == null)
+            timer = new Timer(dashTime);
+
         if (Input.GetKeyDown(KeyCode.Space) && !dashing)
         {
             dashing = true;
+            timer.StartTimer();
             return dashing;
         }
         return false;
@@ -32,10 +37,14 @@ public class DashAbility : IAbilities
 
     public void action(GameObject player)
     {
+        grounded = player.GetComponentInChildren<Grounded>();
         rigidbody2D = player.GetComponent<Rigidbody2D>();
         playerMovement = player.GetComponent<PlayerMovement>();
 
+        MonoBehaviour.Instantiate(playerMovement.dashEffect, rigidbody2D.position, Quaternion.identity);
+
         rigidbody2D.constraints = RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+
         playerMovement.playerSpeed = playerMovement.playerSpeed + 40;
     }
 
@@ -43,13 +52,19 @@ public class DashAbility : IAbilities
     {
         if (dashing)
         {
-            timer += Time.deltaTime;
-            if (timer > dashTime || strictCleanup)
+            if (timer.getTimerStatus() || strictCleanup)
             {
                 rigidbody2D.constraints = RigidbodyConstraints2D.FreezeRotation;
                 playerMovement.playerSpeed = playerMovement.playerSpeed - 40;
-                timer = 0f;
                 dashing = false;
+            }
+        }
+        if (strictCleanup)
+        {
+            GameObject[] clones = GameObject.FindGameObjectsWithTag("Clone");
+            foreach (GameObject cl in clones)
+            {
+                MonoBehaviour.Destroy(cl);
             }
         }
     }

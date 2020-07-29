@@ -22,7 +22,7 @@ public class Grounded : MonoBehaviour
         if (other.gameObject.tag == "Ground")
         {
             isGrounded = true;
-            Debug.Log("Grounded");
+            //Debug.Log("Grounded");
         }
     }
 
@@ -31,7 +31,7 @@ public class Grounded : MonoBehaviour
         if (other.gameObject.tag == "Ground")
         {
             isGrounded = false;
-            Debug.Log("Flying");
+            //Debug.Log("Flying");
         }
     }
 

@@ -17,8 +17,7 @@ public class DoubleJumpAbility : IAbilities
         rigidbody2d = player.GetComponent<Rigidbody2D>();
         playerMovement = player.GetComponent<PlayerMovement>();
         grounded = player.GetComponentInChildren<Grounded>();
-        playerRenderer = player.GetComponent<MeshRenderer>();
-        playerRenderer.material.SetColor("_Color", Color.green);
+
 
         if (Input.GetKeyDown(KeyCode.W) && !grounded.getIsGrounded() && canJump)
         {

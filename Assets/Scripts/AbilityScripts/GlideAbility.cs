@@ -16,8 +16,6 @@ public class GlideAbility : IAbilities
     {
         rigidbody2D = player.GetComponent<Rigidbody2D>();
         grounded = player.GetComponentInChildren<Grounded>();
-        playerRenderer = player.GetComponent<MeshRenderer>();
-        playerRenderer.material.SetColor("_Color", Color.blue);
 
         if (originalGravity == 0)
             originalGravity = rigidbody2D.gravityScale;

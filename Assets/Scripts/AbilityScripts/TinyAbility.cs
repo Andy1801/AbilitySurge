@@ -21,8 +21,7 @@ public class TinyAbility : IAbilities
 
     public bool actionCondition(GameObject player)
     {
-        playerRenderer = player.GetComponent<MeshRenderer>();
-        playerRenderer.material.SetColor("_Color", Color.white);
+        playerRenderer = player.GetComponent<SpriteRenderer>();
 
         transform = player.GetComponent<Transform>();
         rigidbody2D = player.GetComponent<Rigidbody2D>();

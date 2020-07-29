@@ -20,8 +20,7 @@ public class DashAbility : IAbilities
 
     public bool actionCondition(GameObject player)
     {
-        playerRenderer = player.GetComponent<MeshRenderer>();
-        playerRenderer.material.SetColor("_Color", Color.yellow);
+
 
         if (timer == null)
             timer = new Timer(dashTime);

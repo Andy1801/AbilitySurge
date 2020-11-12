@@ -6,8 +6,11 @@ using UnityEngine;
 public class AbilityRotator : MonoBehaviour
 {
     public int abilityTimerThreshold;
+    public AbilityBar abilityBar;
     private Timer timer;
     private bool rotateAbility;
+
+    private string currentAbility;
 
     void Start()
     {
@@ -26,14 +29,26 @@ public class AbilityRotator : MonoBehaviour
         }
     }
 
-    public IAbilities GetAbilities()
+    public IAbilities checkAbilityStatus()
     {
-        if (rotateAbility)
-        {
-            rotateAbility = false;
-            return AbilityFactory.getRandomAbilities();
-        }
+        IAbilities newAbility = null;
 
-        return null;
+        if (currentAbility == null)
+            newAbility = GetAbilities();
+        else if (rotateAbility)
+            newAbility = GetAbilities();
+
+        return newAbility;
+    }
+
+    private IAbilities GetAbilities()
+    {
+        rotateAbility = false;
+        var abilityDetails = AbilityFactory.getRandomAbilities(currentAbility);
+        currentAbility = abilityDetails.abilityName;
+        abilityBar.setToCurrentAbility(currentAbility);
+
+
+        return abilityDetails.ability;
     }
 }

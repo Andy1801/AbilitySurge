@@ -47,8 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyList: []
-  spawnRate: 2
-  enemySpawnThreshold: 50
+  spawnRate: 0.5
+  enemySpawnThreshold: 75
 --- !u!1 &7979949878960781582
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,8 @@ public class AbilityRotator : MonoBehaviour
     private Timer timer;
     private bool rotateAbility;
 
+    private string currentAbility;
+
     void Start()
     {
         timer = new Timer(abilityTimerThreshold);
@@ -26,14 +28,25 @@ public class AbilityRotator : MonoBehaviour
         }
     }
 
-    public IAbilities GetAbilities()
+    public IAbilities checkAbilityStatus()
     {
-        if (rotateAbility)
-        {
-            rotateAbility = false;
-            return AbilityFactory.getRandomAbilities();
-        }
+        IAbilities newAbility = null;
 
-        return null;
+        if (currentAbility == null)
+            newAbility = GetAbilities();
+        else if (rotateAbility)
+            newAbility = GetAbilities();
+
+        return newAbility;
+    }
+
+    private IAbilities GetAbilities()
+    {
+        rotateAbility = false;
+        var abilityDetails = AbilityFactory.getRandomAbilities(currentAbility);
+        currentAbility = abilityDetails.abilityName;
+
+
+        return abilityDetails.ability;
     }
 }

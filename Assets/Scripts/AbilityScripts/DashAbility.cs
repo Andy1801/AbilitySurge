@@ -12,16 +12,18 @@ public class DashAbility : IAbilities
     private Timer timer;
     private float dashTime = 0.15f;
 
+    private Color abilityColor = Color.white;
     private GameObject dashClone;
     private Rigidbody2D rigidbody2D;
     private PlayerMovement playerMovement;
-    private Renderer playerRenderer;
+    private SpriteRenderer playerSpriteRenderer;
     private Grounded grounded;
 
     public bool actionCondition(GameObject player)
     {
-        playerRenderer = player.GetComponent<MeshRenderer>();
-        playerRenderer.material.SetColor("_Color", Color.yellow);
+
+        playerSpriteRenderer = player.GetComponent<SpriteRenderer>();
+        playerSpriteRenderer.color = abilityColor;
 
         if (timer == null)
             timer = new Timer(dashTime);

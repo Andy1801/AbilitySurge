@@ -14,8 +14,6 @@ public class Boundaries : MonoBehaviour
     {
         screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         playerRenderer = transform.GetComponent<Renderer>();
-        Debug.Log(screenBounds);
-
     }
 
     // Update is called once per frame

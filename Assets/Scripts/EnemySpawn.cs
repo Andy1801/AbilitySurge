@@ -34,7 +34,7 @@ public class EnemySpawn : MonoBehaviour
         foreach (Transform transform in enemySpawnPoints)
         {
             bool spawn = Random.Range(0, enemySpawnThreshold) < (enemySpawnThreshold / 2);
-            Debug.Log("Position: " + transform.position);
+            //            Debug.Log("Position: " + transform.position);
 
             if (transform.gameObject.CompareTag("Spawnpoint") && spawn)
             {
@@ -49,8 +49,6 @@ public class EnemySpawn : MonoBehaviour
                 float verticalPosition = Random.Range(spawnHeightDown, spawnHeightUp);
 
                 Vector3 spawnPosition = new Vector3(horizontalPosition, verticalPosition, 0f);
-
-                Debug.Log("Spawned Enemy in position: " + spawnPosition);
 
                 GameObject enemy = enemyList[0];
 

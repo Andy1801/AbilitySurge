@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class DoubleJumpAbility : IAbilities
 {
+    private Color abilityColor = Color.yellow;
     private PlayerMovement playerMovement;
-    private Renderer playerRenderer;
+    private SpriteRenderer playerSpriteRenderer;
     private Rigidbody2D rigidbody2d;
     private bool canJump = true;
     private bool jumping;
@@ -17,8 +18,10 @@ public class DoubleJumpAbility : IAbilities
         rigidbody2d = player.GetComponent<Rigidbody2D>();
         playerMovement = player.GetComponent<PlayerMovement>();
         grounded = player.GetComponentInChildren<Grounded>();
-        playerRenderer = player.GetComponent<MeshRenderer>();
-        playerRenderer.material.SetColor("_Color", Color.green);
+        playerSpriteRenderer = player.GetComponent<SpriteRenderer>();
+
+        playerSpriteRenderer.color = abilityColor;
+
 
         if (Input.GetKeyDown(KeyCode.W) && !grounded.getIsGrounded() && canJump)
         {

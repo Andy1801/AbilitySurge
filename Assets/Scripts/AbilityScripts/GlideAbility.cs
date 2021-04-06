@@ -7,7 +7,8 @@ public class GlideAbility : IAbilities
     private const float lerpTime = 0.2f;
     private float originalGravity = 0f;
 
-    private Renderer playerRenderer;
+    private Color abilityColor = Color.black;
+    private SpriteRenderer playerSpriteRenderer;
     private PlayerMovement playerMovement;
     private Rigidbody2D rigidbody2D;
     private Grounded grounded;
@@ -16,11 +17,12 @@ public class GlideAbility : IAbilities
     {
         rigidbody2D = player.GetComponent<Rigidbody2D>();
         grounded = player.GetComponentInChildren<Grounded>();
-        playerRenderer = player.GetComponent<MeshRenderer>();
-        playerRenderer.material.SetColor("_Color", Color.blue);
+        playerSpriteRenderer = player.GetComponent<SpriteRenderer>();
 
         if (originalGravity == 0)
             originalGravity = rigidbody2D.gravityScale;
+
+        playerSpriteRenderer.color = abilityColor;
 
         return Input.GetKey(KeyCode.Space) && !grounded.getIsGrounded();
     }

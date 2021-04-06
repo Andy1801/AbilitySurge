@@ -6,35 +6,49 @@ using UnityEngine;
 // TODO: Think about a pub/sub pattern approach in order to fix the factory 
 public static class AbilityFactory
 {
-    static List<string> abilityList = new List<string>();
+    static HashSet<string> abilityList = new HashSet<string>();
 
     static AbilityFactory()
     {
-        abilityList.Add("gliding");
-        abilityList.Add("tiny");
-        abilityList.Add("dash");
-        abilityList.Add("doubleJump");
+        abilityList.Add("Gliding");
+        abilityList.Add("Tiny");
+        abilityList.Add("Dash");
+        abilityList.Add("Double Jump");
     }
 
-    public static IAbilities getRandomAbilities()
+    public static (IAbilities ability, string abilityName) getRandomAbilities(string currentAbility)
     {
+        string[] currentAbilityList = getCurrentAbilityList(currentAbility);
+
         //Get a random item from list
-        string abilityName = abilityList.ToArray()[Random.Range(0, abilityList.Count)];
-        Debug.Log(abilityName);
-        return GetAbilities(abilityName);
+        string abilityName = currentAbilityList[Random.Range(0, currentAbilityList.Length)];
+        // Debug.Log(abilityName);
+        return (GetAbilities(abilityName), abilityName);
+    }
+
+    private static string[] getCurrentAbilityList(string currentAbility)
+    {
+        abilityList.Remove(currentAbility);
+
+        string[] currentAbilityList = new string[abilityList.Count];
+
+        abilityList.CopyTo(currentAbilityList);
+        abilityList.Add(currentAbility);
+
+        return currentAbilityList;
     }
 
     private static IAbilities GetAbilities(string abilityName)
     {
         switch (abilityName)
         {
-            case "gliding":
+            case "Gliding":
                 return new GlideAbility();
-            case "tiny":
+            case "Tiny":
                 return new TinyAbility();
-            case "dash":
+            case "Dash":
                 return new DashAbility();
-            case "doubleJump":
+            case "Double Jump":
                 return new DoubleJumpAbility();
             default:
                 return null;

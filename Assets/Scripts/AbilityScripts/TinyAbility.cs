@@ -13,7 +13,8 @@ public class TinyAbility : IAbilities
     float originalGravity = 0f;
     float tinyGravity = 3f;
 
-    private Renderer playerRenderer;
+    private Color abilityColor = Color.blue;
+    private SpriteRenderer playerSpriteRenderer;
     private Transform transform;
     private Rigidbody2D rigidbody2D;
 
@@ -21,10 +22,12 @@ public class TinyAbility : IAbilities
 
     public bool actionCondition(GameObject player)
     {
-        playerRenderer = player.GetComponent<SpriteRenderer>();
+        playerSpriteRenderer = player.GetComponent<SpriteRenderer>();
 
         transform = player.GetComponent<Transform>();
         rigidbody2D = player.GetComponent<Rigidbody2D>();
+
+        playerSpriteRenderer.color = abilityColor;
 
         if (originalScale == Vector3.zero)
         {
@@ -43,7 +46,7 @@ public class TinyAbility : IAbilities
 
         if (notTiny)
         {
-            float verticalSizeChange = playerRenderer.bounds.extents.y;
+            float verticalSizeChange = playerSpriteRenderer.bounds.extents.y;
             transform.position = new Vector3(transform.position.x, transform.position.y - verticalSizeChange, transform.position.z);
             notTiny = false;
         }

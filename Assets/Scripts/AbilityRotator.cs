@@ -6,7 +6,6 @@ using UnityEngine;
 public class AbilityRotator : MonoBehaviour
 {
     public int abilityTimerThreshold;
-    public AbilityBar abilityBar;
     private Timer timer;
     private bool rotateAbility;
 
@@ -46,7 +45,6 @@ public class AbilityRotator : MonoBehaviour
         rotateAbility = false;
         var abilityDetails = AbilityFactory.getRandomAbilities(currentAbility);
         currentAbility = abilityDetails.abilityName;
-        abilityBar.setToCurrentAbility(currentAbility);
 
 
         return abilityDetails.ability;

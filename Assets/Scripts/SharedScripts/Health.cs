@@ -7,7 +7,6 @@ public class Health : MonoBehaviour
     private const string GAME_OVER = "GameOver";
 
     public int health;
-    public HealthBar healthBar;
 
     private SceneChange sceneChange;
 
@@ -15,7 +14,6 @@ public class Health : MonoBehaviour
     void Start()
     {
         sceneChange = new SceneChange();
-        healthBar.setMaxHealth(health);
     }
 
     //When an enemy touchs an object remove heath
@@ -25,7 +23,6 @@ public class Health : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             health -= 1;
-            healthBar.setHealth(health);
         }
 
 

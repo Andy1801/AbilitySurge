@@ -3,12 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChange : MonoBehaviour
-{
+public class SceneChange : MonoBehaviour {
 
-    public void changeScene(string sceneName)
-    {
-        SceneManager.LoadSceneAsync(sceneName);
+    public void changeScene (string sceneName) {
+        SceneManager.LoadSceneAsync (sceneName);
     }
 
 }

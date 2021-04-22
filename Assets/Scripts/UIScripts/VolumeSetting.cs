@@ -16,19 +16,31 @@ public class VolumeSetting : MonoBehaviour
     void Start()
     {
         audioSource = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioSource>();
-        volumeInputText.text = (audioSource.volume * MAX_VOLUME).ToString();
+
+        float volume = audioSource.volume;
+        if (PlayerPrefManager.checkKeyValue())
+        {
+            volume = PlayerPrefManager.getVolume();
+        }
+
+        volumeInputText.text = (volume * MAX_VOLUME).ToString();
+        audioSource.volume = volume;
+        volumeChangeFromText();
+        volumePrefChange(volume);
     }
 
     public void volumeChangeFromText()
     {
         float volume = convertVolumeText();
         volumeSlider.value = volume <= MAX_VOLUME ? volume / MAX_VOLUME : MAX_VOLUME / MAX_VOLUME;
+        volumePrefChange(volume / MAX_VOLUME);
     }
 
     public void volumeChangeFromSlider()
     {
         string volumeText = (volumeSlider.value * MAX_VOLUME).ToString("n1");
         volumeInputText.text = volumeText;
+        volumePrefChange(volumeSlider.value);
     }
 
     private float convertVolumeText()
@@ -45,5 +57,10 @@ public class VolumeSetting : MonoBehaviour
         }
 
         return volume;
+    }
+
+    private void volumePrefChange(float volume)
+    {
+        PlayerPrefManager.setVolume(volume);
     }
 }

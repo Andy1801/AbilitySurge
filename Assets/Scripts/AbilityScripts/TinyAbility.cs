@@ -40,22 +40,26 @@ public class TinyAbility : IAbilities
 
     public void action(GameObject player)
     {
+        if(!PauseMenu.isPaused){
+            rigidbody2D.gravityScale = tinyGravity;
+            transform.localScale = tinyScale;
 
-        rigidbody2D.gravityScale = tinyGravity;
-        transform.localScale = tinyScale;
-
-        if (notTiny)
-        {
-            float verticalSizeChange = playerSpriteRenderer.bounds.extents.y;
-            transform.position = new Vector3(transform.position.x, transform.position.y - verticalSizeChange, transform.position.z);
-            notTiny = false;
+            if (notTiny)
+            {
+                float verticalSizeChange = playerSpriteRenderer.bounds.extents.y;
+                transform.position = new Vector3(transform.position.x, transform.position.y - verticalSizeChange, transform.position.z);
+                notTiny = false;
+            }
         }
     }
 
     public void actionCleanUp(GameObject player, bool strictCleanup)
     {
-        rigidbody2D.gravityScale = originalGravity;
-        transform.localScale = originalScale;
-        notTiny = true;
+        if(!PauseMenu.isPaused)
+        {
+            rigidbody2D.gravityScale = originalGravity;
+            transform.localScale = originalScale;
+            notTiny = true;
+        }
     }
 }

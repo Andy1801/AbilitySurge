@@ -7,8 +7,15 @@ using TMPro;
 
 public class VolumeSetting : MonoBehaviour
 {
+
+    // Constant list for playerPref
+    private const string VOLUME_KEY = "volume";
+    private const string MUTE_KEY = "mute";
+
+    // Constant for volume
     private const float MAX_VOLUME = 100f;
 
+    public Toggle muteToggle;
     public Slider volumeSlider;
     public TMP_InputField volumeInputText;
     private AudioSource audioSource;
@@ -17,12 +24,11 @@ public class VolumeSetting : MonoBehaviour
     {
         audioSource = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioSource>();
 
-        float volume = audioSource.volume;
-        if (PlayerPrefManager.checkKeyValue())
-        {
-            volume = PlayerPrefManager.getVolume();
-        }
+        float volume = PlayerPrefManager.checkKeyValue(VOLUME_KEY) ? PlayerPrefManager.getVolume(VOLUME_KEY) : audioSource.volume;
+        bool isMute = PlayerPrefManager.checkKeyValue(MUTE_KEY) ? PlayerPrefManager.getMute(MUTE_KEY) : false;
 
+        Debug.Log("Is muted on start: " + isMute);
+        changeMuteOption(isMute);
         volumeInputText.text = (volume * MAX_VOLUME).ToString();
         audioSource.volume = volume;
         volumeChangeFromText();
@@ -43,6 +49,19 @@ public class VolumeSetting : MonoBehaviour
         volumePrefChange(volumeSlider.value);
     }
 
+    public void toggleMute()
+    {
+        changeMuteOption(audioSource.mute);
+    }
+
+    private void changeMuteOption(bool isMuted)
+    {
+        PlayerPrefManager.setMute(MUTE_KEY, isMuted.ToString());
+        audioSource.mute = isMuted;
+        muteToggle.isOn = isMuted;
+    }
+
+
     private float convertVolumeText()
     {
         float volume;
@@ -61,6 +80,8 @@ public class VolumeSetting : MonoBehaviour
 
     private void volumePrefChange(float volume)
     {
-        PlayerPrefManager.setVolume(volume);
+        PlayerPrefManager.setVolume(VOLUME_KEY, volume);
     }
+
+
 }

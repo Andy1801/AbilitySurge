@@ -318,6 +318,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6395540225164019611, guid: b5298c34959adc14397c3e7844823373,
+        type: 3}
+      propertyPath: muteToggle
+      value: 
+      objectReference: {fileID: 450323024}
     - target: {fileID: 6395540225502429886, guid: b5298c34959adc14397c3e7844823373,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -462,6 +467,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395540226242206176, guid: b5298c34959adc14397c3e7844823373,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395540226242206176, guid: b5298c34959adc14397c3e7844823373,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395540226242206176, guid: b5298c34959adc14397c3e7844823373,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395540226242206176, guid: b5298c34959adc14397c3e7844823373,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1798005261}
+    - target: {fileID: 6395540226242206176, guid: b5298c34959adc14397c3e7844823373,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: toggleScreenMode
+      objectReference: {fileID: 0}
+    - target: {fileID: 6395540226242206176, guid: b5298c34959adc14397c3e7844823373,
+        type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6395540226274774977, guid: b5298c34959adc14397c3e7844823373,
         type: 3}
@@ -698,6 +733,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &450323024 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6395540225819809857, guid: b5298c34959adc14397c3e7844823373,
+    type: 3}
+  m_PrefabInstance: {fileID: 13995614}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &593288208
 GameObject:
   m_ObjectHideFlags: 0
@@ -1109,6 +1156,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6129af96bac3433498f19edf37b3c6fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1798005261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798005256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b63eb58c2e4194197b12229090b8c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullScreenToggle: {fileID: 2004355959}
+--- !u!114 &2004355959 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6395540226242206176, guid: b5298c34959adc14397c3e7844823373,
+    type: 3}
+  m_PrefabInstance: {fileID: 13995614}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2010934715

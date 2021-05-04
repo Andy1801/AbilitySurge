@@ -2,25 +2,47 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-//TODO: Turn into properties
+//TODO: Turn into properties/delegates
 public class PlayerPrefManager : MonoBehaviour
 {
-    // Set constant list
-    private const string VOLUME_KEY = "volume";
 
-    public static void setVolume(float volume)
+    public static void setVolume(string volumeKey, float volume)
     {
-        PlayerPrefs.SetFloat(VOLUME_KEY, volume);
+        PlayerPrefs.SetFloat(volumeKey, volume);
     }
 
-    public static float getVolume()
+    public static void setMute(string muteKey, string isMute)
     {
-        return PlayerPrefs.GetFloat(VOLUME_KEY);
+        PlayerPrefs.SetString(muteKey, isMute);
     }
 
-    public static bool checkKeyValue()
+    public static void setScreenMode(string screenKey, string isFullScreen)
     {
-        return PlayerPrefs.HasKey(VOLUME_KEY);
+        PlayerPrefs.SetString(screenKey, isFullScreen);
+    }
+
+    public static bool getMute(string muteKey)
+    {
+        string muteString = PlayerPrefs.GetString(muteKey);
+
+        return muteString.Equals("True");
+    }
+
+    public static float getVolume(string volumeKey)
+    {
+        return PlayerPrefs.GetFloat(volumeKey);
+    }
+
+    public static bool getScreenMode(string screenKey)
+    {
+        string screenModeString = PlayerPrefs.GetString(screenKey);
+
+        return screenModeString.Equals("True");
+    }
+
+    public static bool checkKeyValue(string key)
+    {
+        return PlayerPrefs.HasKey(key);
     }
 
     public void savePlayerPref()

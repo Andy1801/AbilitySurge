@@ -39,6 +39,7 @@ public class VolumeSetting : MonoBehaviour
     {
         float volume = convertVolumeText();
         volumeSlider.value = volume <= MAX_VOLUME ? volume / MAX_VOLUME : MAX_VOLUME / MAX_VOLUME;
+        changeMuteOption(false);
         volumePrefChange(volume / MAX_VOLUME);
     }
 
@@ -46,6 +47,7 @@ public class VolumeSetting : MonoBehaviour
     {
         string volumeText = (volumeSlider.value * MAX_VOLUME).ToString("n1");
         volumeInputText.text = volumeText;
+        changeMuteOption(false);
         volumePrefChange(volumeSlider.value);
     }
 

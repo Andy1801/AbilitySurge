@@ -138,6 +138,16 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: set_volume
       objectReference: {fileID: 0}
+    - target: {fileID: 6395540224691820034, guid: b5298c34959adc14397c3e7844823373,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 871102570}
+    - target: {fileID: 6395540224691820034, guid: b5298c34959adc14397c3e7844823373,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: volumeChangeFromSlider
+      objectReference: {fileID: 0}
     - target: {fileID: 6395540224726189486, guid: b5298c34959adc14397c3e7844823373,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -316,7 +326,7 @@ PrefabInstance:
     - target: {fileID: 6395540225164019607, guid: b5298c34959adc14397c3e7844823373,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6395540225164019611, guid: b5298c34959adc14397c3e7844823373,
         type: 3}
@@ -326,7 +336,7 @@ PrefabInstance:
     - target: {fileID: 6395540225502429886, guid: b5298c34959adc14397c3e7844823373,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6395540225641298848, guid: b5298c34959adc14397c3e7844823373,
         type: 3}
@@ -392,7 +402,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1798005258}
+      objectReference: {fileID: 871102570}
     - target: {fileID: 6395540225819809857, guid: b5298c34959adc14397c3e7844823373,
         type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -487,7 +497,7 @@ PrefabInstance:
         type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1798005261}
+      objectReference: {fileID: 871102569}
     - target: {fileID: 6395540226242206176, guid: b5298c34959adc14397c3e7844823373,
         type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -538,8 +548,33 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Resume
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6395540225164019611, guid: b5298c34959adc14397c3e7844823373, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b5298c34959adc14397c3e7844823373, type: 3}
+--- !u!114 &13995615 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6395540224954832406, guid: b5298c34959adc14397c3e7844823373,
+    type: 3}
+  m_PrefabInstance: {fileID: 13995614}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &13995616 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6395540224691820034, guid: b5298c34959adc14397c3e7844823373,
+    type: 3}
+  m_PrefabInstance: {fileID: 13995614}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &282739777
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,6 +954,8 @@ GameObject:
   - component: {fileID: 871102566}
   - component: {fileID: 871102565}
   - component: {fileID: 871102564}
+  - component: {fileID: 871102570}
+  - component: {fileID: 871102569}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1019,6 +1056,34 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &871102569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871102563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56b63eb58c2e4194197b12229090b8c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullScreenToggle: {fileID: 2004355959}
+--- !u!114 &871102570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871102563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6129af96bac3433498f19edf37b3c6fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muteToggle: {fileID: 450323024}
+  volumeSlider: {fileID: 13995616}
+  volumeInputText: {fileID: 13995615}
 --- !u!1 &1501511491
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,31 +1211,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 13995614}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1798005258 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6395540225164019611, guid: b5298c34959adc14397c3e7844823373,
-    type: 3}
-  m_PrefabInstance: {fileID: 13995614}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1798005256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6129af96bac3433498f19edf37b3c6fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1798005261
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1798005256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56b63eb58c2e4194197b12229090b8c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fullScreenToggle: {fileID: 2004355959}
 --- !u!114 &2004355959 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6395540226242206176, guid: b5298c34959adc14397c3e7844823373,

@@ -9,6 +9,7 @@ TagManager:
   - Clone
   - Enemy
   - Audio
+  - Health
   layers:
   - Default
   - TransparentFX

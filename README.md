@@ -54,7 +54,4 @@ This is used for all the abilities in order to be able to switch our states at w
 - [x] Double Jump
 <img src="https://user-images.githubusercontent.com/35610424/89109073-fba75e00-d40b-11ea-8c9a-e39110a6aea6.gif" width="400">
 
-- [ ] Teleport
-- [ ] Force Punch
-- [ ] Shield
 

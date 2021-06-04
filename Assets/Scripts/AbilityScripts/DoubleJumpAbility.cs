@@ -54,4 +54,8 @@ public class DoubleJumpAbility : IAbilities
     {
 
     }
+    
+    public Color GetColor(){
+        return abilityColor;
+    }
 }

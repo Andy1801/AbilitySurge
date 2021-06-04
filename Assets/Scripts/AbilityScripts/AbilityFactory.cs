@@ -21,8 +21,8 @@ public static class AbilityFactory
         string[] currentAbilityList = getCurrentAbilityList(currentAbility);
 
         //Get a random item from list
-        string abilityName = currentAbilityList[Random.Range(0, currentAbilityList.Length)];
-        // Debug.Log(abilityName);
+        string abilityName = currentAbilityList[Random.Range(0, currentAbilityList.Length-1)];
+        Debug.Log("Ability : " + abilityName);
         return (GetAbilities(abilityName), abilityName);
     }
 

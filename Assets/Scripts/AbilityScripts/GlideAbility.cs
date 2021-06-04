@@ -43,5 +43,9 @@ public class GlideAbility : IAbilities
     {
         rigidbody2D.gravityScale = originalGravity;
     }
+    
+    public Color GetColor(){
+        return abilityColor;
+    }
 
 }

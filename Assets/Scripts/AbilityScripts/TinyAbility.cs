@@ -62,4 +62,8 @@ public class TinyAbility : IAbilities
             notTiny = true;
         }
     }
+
+    public Color GetColor(){
+        return abilityColor;
+    }
 }

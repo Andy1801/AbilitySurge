@@ -20,13 +20,13 @@ public class HealthUI : MonoBehaviour
     }
 
     // Uncomment in order to test health works
-    // void Update()
-    // {
-    //     if (Input.GetKeyDown(KeyCode.P))
-    //     {
-    //         reduceHeartContainers();
-    //     }
-    // }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            reduceHeartContainers();
+        }
+    }
 
     public void reduceHeartContainers()
     {

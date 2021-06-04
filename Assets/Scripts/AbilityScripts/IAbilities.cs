@@ -12,4 +12,7 @@ public interface IAbilities
     //Clean up for the action performed
     void actionCleanUp(GameObject player, bool strictCleanup);
 
+    //Get color
+    Color GetColor();
+
 }

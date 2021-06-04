@@ -72,4 +72,8 @@ public class DashAbility : IAbilities
             }
         }
     }
+    
+    public Color GetColor(){
+        return abilityColor;
+    }
 }

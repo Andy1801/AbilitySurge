@@ -7,6 +7,7 @@ public class Health : MonoBehaviour
     private const string GAME_OVER = "GameOver";
 
     public int health;
+    public HealthUI heartContainers;
 
     private SceneChange sceneChange;
 
@@ -19,13 +20,11 @@ public class Health : MonoBehaviour
     //When an enemy touchs an object remove heath
     void OnTriggerEnter2D(Collider2D other)
     {
-        // TODO: Make the damage be based on the attack stat of the enemy
         if (other.gameObject.CompareTag("Enemy"))
         {
             health -= 1;
+            heartContainers.reduceHeartContainers();
         }
-
-
     }
 
     void LateUpdate()

@@ -1,0 +1,1352 @@
+fileFormatVersion: 2
+guid: cbde020d8abdc8348839fe2a9346e018
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -591848304490208859
+    second: Dark Blue Ball
+  - first:
+      213: 4144501463774489109
+    second: Light Blue Ball
+  - first:
+      213: -1002203973166419200
+    second: Player Wro
+  - first:
+      213: -2450161988643424728
+    second: Dark Blue Platform
+  - first:
+      213: 8042726581993861248
+    second: Light Blue Platform
+  - first:
+      213: -7524092329799032272
+    second: Dark Blue Floor
+  - first:
+      213: -9039297686960595207
+    second: Light Blue Floor
+  - first:
+      213: -4784918775725378999
+    second: assets(3)_7
+  - first:
+      213: 5493955926284051750
+    second: assets(3)_8
+  - first:
+      213: -2574216266315011842
+    second: assets(3)_9
+  - first:
+      213: -4393171485147691701
+    second: assets(3)_10
+  - first:
+      213: -4023621050640863485
+    second: assets(3)_11
+  - first:
+      213: -4589314151806871026
+    second: assets(3)_12
+  - first:
+      213: 2466479475634757566
+    second: assets(3)_13
+  - first:
+      213: 7180642764773326368
+    second: assets(3)_14
+  - first:
+      213: 7695894093733140230
+    second: assets(3)_15
+  - first:
+      213: 480217955436335422
+    second: assets(3)_16
+  - first:
+      213: -627928532884512358
+    second: assets(3)_17
+  - first:
+      213: 3068155578584913747
+    second: assets(3)_18
+  - first:
+      213: 5700246702674724600
+    second: assets(3)_19
+  - first:
+      213: -8233872141603835606
+    second: assets(3)_20
+  - first:
+      213: -4616692723835676434
+    second: assets(3)_21
+  - first:
+      213: 790233568013135641
+    second: assets(3)_22
+  - first:
+      213: -7218816381776730433
+    second: assets(3)_23
+  - first:
+      213: 2336976222902819318
+    second: assets(3)_24
+  - first:
+      213: 8069897483232731874
+    second: assets(3)_25
+  - first:
+      213: 4523573599029238859
+    second: assets(3)_26
+  - first:
+      213: -2811763361963557550
+    second: assets(3)_27
+  - first:
+      213: 6411643367100360238
+    second: assets(3)_28
+  - first:
+      213: 7591216295172267105
+    second: assets(3)_29
+  - first:
+      213: -8622861375110490181
+    second: assets(3)_30
+  - first:
+      213: -6999939443255310467
+    second: assets(3)_31
+  - first:
+      213: -8129456277952680281
+    second: assets(3)_32
+  - first:
+      213: -1875822332090611744
+    second: assets(3)_33
+  - first:
+      213: -5892209886921377294
+    second: assets(3)_34
+  - first:
+      213: -6169506820778170301
+    second: assets(3)_35
+  - first:
+      213: -1565126664938238581
+    second: assets(3)_36
+  - first:
+      213: -4549563746154388130
+    second: assets(3)_37
+  - first:
+      213: 7798352199746822951
+    second: assets(3)_38
+  - first:
+      213: 7826621349557265975
+    second: assets(3)_39
+  - first:
+      213: 2678081551967747862
+    second: assets(3)_40
+  - first:
+      213: 1375539623451318781
+    second: assets(3)_41
+  - first:
+      213: -4488019786700803406
+    second: assets(3)_42
+  - first:
+      213: 1020144425605528545
+    second: assets(3)_43
+  - first:
+      213: -9200343895267175503
+    second: assets(3)_44
+  - first:
+      213: -2938027350011049194
+    second: assets(3)_45
+  - first:
+      213: -1998729102124165189
+    second: assets(3)_46
+  - first:
+      213: 8581070966137145250
+    second: assets(3)_47
+  - first:
+      213: -7783487976272351239
+    second: assets(3)_48
+  - first:
+      213: 1160086695292346875
+    second: assets(3)_49
+  - first:
+      213: -6069221229718057794
+    second: assets(3)_50
+  - first:
+      213: -8071843426445168233
+    second: assets(3)_51
+  - first:
+      213: -772380564625073947
+    second: assets(3)_52
+  - first:
+      213: -8520701291059115332
+    second: assets(3)_53
+  - first:
+      213: 3117028582623548219
+    second: assets(3)_54
+  - first:
+      213: -5661865587442000815
+    second: assets(3)_55
+  - first:
+      213: 329030636808610474
+    second: assets(3)_56
+  - first:
+      213: -1478162179007217429
+    second: assets(3)_57
+  - first:
+      213: 4214861891381272069
+    second: assets(3)_58
+  - first:
+      213: -8334910989275747656
+    second: assets(3)_59
+  - first:
+      213: 5764615932490179419
+    second: assets(3)_60
+  - first:
+      213: 2722783779041843848
+    second: assets(3)_61
+  - first:
+      213: 2495865573644268077
+    second: assets(3)_62
+  - first:
+      213: 4192672426953689317
+    second: assets(3)_63
+  - first:
+      213: 4899874121709000641
+    second: assets(3)_64
+  - first:
+      213: -5281069213999721258
+    second: assets(3)_65
+  - first:
+      213: 2986313850164609064
+    second: assets(3)_66
+  - first:
+      213: -8290486991483711725
+    second: assets(3)_67
+  - first:
+      213: -7650626406589966566
+    second: assets(3)_68
+  - first:
+      213: -5300101393512135308
+    second: assets(3)_69
+  - first:
+      213: -2998995152239302535
+    second: assets(3)_70
+  - first:
+      213: -6797338726474343938
+    second: assets(3)_71
+  - first:
+      213: 2670139865428853461
+    second: assets(3)_72
+  - first:
+      213: 612690548241427782
+    second: assets(3)_73
+  - first:
+      213: -5272770854309492348
+    second: assets(3)_74
+  - first:
+      213: -4463359010043685333
+    second: assets(3)_75
+  - first:
+      213: -9023975415104975278
+    second: assets(3)_76
+  - first:
+      213: -7212180674573007380
+    second: assets(3)_77
+  - first:
+      213: -3005052619031413903
+    second: assets(3)_78
+  - first:
+      213: -9164316133264045623
+    second: assets(3)_79
+  - first:
+      213: 2682515095767652613
+    second: assets(3)_80
+  - first:
+      213: 5638550488401607436
+    second: assets(3)_81
+  - first:
+      213: 692979020905589581
+    second: assets(3)_82
+  - first:
+      213: 496211321206205523
+    second: assets(3)_83
+  - first:
+      213: -2580163270730018423
+    second: assets(3)_84
+  - first:
+      213: -1506199622049593422
+    second: assets(3)_85
+  - first:
+      213: 5780518129122677031
+    second: assets(3)_86
+  - first:
+      213: -7087892141787826096
+    second: assets(3)_87
+  - first:
+      213: 5004279496697080063
+    second: assets(3)_88
+  - first:
+      213: -3640885809113682383
+    second: assets(3)_89
+  - first:
+      213: 8995138608523147309
+    second: assets(3)_90
+  - first:
+      213: 6986923097740025825
+    second: assets(3)_91
+  - first:
+      213: -6986219057672123582
+    second: assets(3)_92
+  - first:
+      213: -4057844716687138461
+    second: assets(3)_93
+  - first:
+      213: -5722815855135960632
+    second: assets(3)_94
+  - first:
+      213: -892887318498293568
+    second: assets(3)_95
+  - first:
+      213: 812677245389992059
+    second: assets(3)_96
+  - first:
+      213: 629905267874504356
+    second: assets(3)_97
+  - first:
+      213: -6733813090948133965
+    second: assets(3)_98
+  - first:
+      213: -3511544846599773353
+    second: assets(3)_99
+  - first:
+      213: -4006792423612542456
+    second: assets(3)_100
+  - first:
+      213: 3586314430353956518
+    second: assets(3)_101
+  - first:
+      213: 6386343468623889855
+    second: assets(3)_102
+  - first:
+      213: 6147386505724735387
+    second: assets(3)_103
+  - first:
+      213: -829904272028072129
+    second: assets(3)_104
+  - first:
+      213: -671894044084142088
+    second: assets(3)_105
+  - first:
+      213: 695712278186208186
+    second: assets(3)_106
+  - first:
+      213: 5206497776611089084
+    second: assets(3)_107
+  - first:
+      213: 5636083746671711821
+    second: assets(3)_108
+  - first:
+      213: 5107095724769301430
+    second: assets(3)_109
+  - first:
+      213: -4347398339192130626
+    second: assets(3)_110
+  - first:
+      213: -7748073884382332690
+    second: assets(3)_111
+  - first:
+      213: 1626570017099295994
+    second: assets(3)_112
+  - first:
+      213: 5417114251962349790
+    second: assets(3)_113
+  - first:
+      213: 1631098863336095661
+    second: assets(3)_114
+  - first:
+      213: -7170949705159757955
+    second: assets(3)_115
+  - first:
+      213: 8357794823365486202
+    second: assets(3)_116
+  - first:
+      213: 3384766262028958339
+    second: assets(3)_117
+  - first:
+      213: -3772657672865617950
+    second: assets(3)_118
+  - first:
+      213: 7935554340300634324
+    second: assets(3)_119
+  - first:
+      213: -8019464908265582510
+    second: assets(3)_120
+  - first:
+      213: -649253962320808488
+    second: assets(3)_121
+  - first:
+      213: 8786260045617604618
+    second: assets(3)_122
+  - first:
+      213: 981871378565973419
+    second: assets(3)_123
+  - first:
+      213: 6317807678272373119
+    second: assets(3)_124
+  - first:
+      213: 4977081607059246411
+    second: assets(3)_125
+  - first:
+      213: -308096529589952712
+    second: assets(3)_126
+  - first:
+      213: -2140305305189877572
+    second: assets(3)_127
+  - first:
+      213: -5087840987759292595
+    second: assets(3)_128
+  - first:
+      213: 7228460761588228351
+    second: assets(3)_129
+  - first:
+      213: -4398297067395618046
+    second: assets(3)_130
+  - first:
+      213: 8460442552476168169
+    second: assets(3)_131
+  - first:
+      213: 5059452590750874564
+    second: assets(3)_132
+  - first:
+      213: 1350094005731301069
+    second: assets(3)_133
+  - first:
+      213: -5805714308520899486
+    second: assets(3)_134
+  - first:
+      213: 3540818285431135289
+    second: assets(3)_135
+  - first:
+      213: -6998207001986796327
+    second: assets(3)_136
+  - first:
+      213: -7812424700922202296
+    second: assets(3)_137
+  - first:
+      213: -5163241818914205979
+    second: assets(3)_138
+  - first:
+      213: 3004995371961108269
+    second: assets(3)_139
+  - first:
+      213: -7337032984339756540
+    second: assets(3)_140
+  - first:
+      213: 1852627120750404997
+    second: assets(3)_141
+  - first:
+      213: -4653803036949686518
+    second: assets(3)_142
+  - first:
+      213: -3090292191643821442
+    second: assets(3)_143
+  - first:
+      213: 8749239660731292473
+    second: assets(3)_144
+  - first:
+      213: -1935451859117112457
+    second: assets(3)_145
+  - first:
+      213: 1219564293746994482
+    second: assets(3)_146
+  - first:
+      213: -9196716783594152055
+    second: assets(3)_147
+  - first:
+      213: 4926364013132225714
+    second: assets(3)_148
+  - first:
+      213: -4147836714297761040
+    second: assets(3)_149
+  - first:
+      213: 6712257416630235392
+    second: assets(3)_150
+  - first:
+      213: 3956410571334489799
+    second: assets(3)_151
+  - first:
+      213: 4528985124413444167
+    second: assets(3)_152
+  - first:
+      213: 1273141629694723814
+    second: assets(3)_153
+  - first:
+      213: 7649528249065908696
+    second: assets(3)_154
+  - first:
+      213: 952682602033585924
+    second: assets(3)_155
+  - first:
+      213: -9127815903237290125
+    second: assets(3)_156
+  - first:
+      213: -8533097906957131734
+    second: assets(3)_157
+  - first:
+      213: -9139518299957051779
+    second: assets(3)_158
+  - first:
+      213: -5932817865177855288
+    second: assets(3)_159
+  - first:
+      213: -7148249471664069895
+    second: assets(3)_160
+  - first:
+      213: 5780760165650600169
+    second: assets(3)_161
+  - first:
+      213: 1018590139198583066
+    second: assets(3)_162
+  - first:
+      213: 1056926067815896856
+    second: assets(3)_163
+  - first:
+      213: 8140531943107280999
+    second: assets(3)_164
+  - first:
+      213: -44240503482543091
+    second: assets(3)_165
+  - first:
+      213: -6260613958085346297
+    second: assets(3)_166
+  - first:
+      213: -678629402905643615
+    second: assets(3)_167
+  - first:
+      213: 5745504812660104251
+    second: assets(3)_168
+  - first:
+      213: 1152384158668104778
+    second: assets(3)_169
+  - first:
+      213: 1419962219851622359
+    second: assets(3)_170
+  - first:
+      213: 2285811258670685916
+    second: assets(3)_171
+  - first:
+      213: -8613016041585167763
+    second: assets(3)_172
+  - first:
+      213: 6703179588751491092
+    second: assets(3)_173
+  - first:
+      213: 3288396020017587077
+    second: assets(3)_174
+  - first:
+      213: 2991327800585329434
+    second: assets(3)_175
+  - first:
+      213: -2952489476712272209
+    second: assets(3)_176
+  - first:
+      213: -260439363400631014
+    second: assets(3)_177
+  - first:
+      213: -1251241947808169327
+    second: assets(3)_178
+  - first:
+      213: -5888699894677818932
+    second: assets(3)_179
+  - first:
+      213: 1047959059221252513
+    second: assets(3)_180
+  - first:
+      213: -8522072780163744716
+    second: assets(3)_181
+  - first:
+      213: 3105573492295232364
+    second: assets(3)_182
+  - first:
+      213: -4247445921727194375
+    second: assets(3)_183
+  - first:
+      213: -5493395510389416693
+    second: assets(3)_184
+  - first:
+      213: -3623416575468962226
+    second: assets(3)_185
+  - first:
+      213: 1707977490922884495
+    second: assets(3)_186
+  - first:
+      213: -4306387767459574289
+    second: assets(3)_187
+  - first:
+      213: 2222075742732062743
+    second: assets(3)_188
+  - first:
+      213: 7432567935685296435
+    second: assets(3)_189
+  - first:
+      213: 8796335591638567847
+    second: assets(3)_190
+  - first:
+      213: -3536743369041681530
+    second: assets(3)_191
+  - first:
+      213: 307099334665799193
+    second: assets(3)_192
+  - first:
+      213: -5532565165693060773
+    second: assets(3)_193
+  - first:
+      213: 8475692458843598558
+    second: assets(3)_194
+  - first:
+      213: -8782911236543925571
+    second: assets(3)_195
+  - first:
+      213: -2461100862027683599
+    second: assets(3)_196
+  - first:
+      213: -7419511739527596455
+    second: assets(3)_197
+  - first:
+      213: -218020831305390776
+    second: assets(3)_198
+  - first:
+      213: -2123698374970246352
+    second: assets(3)_199
+  - first:
+      213: 3930437580133926573
+    second: assets(3)_200
+  - first:
+      213: -6803623429186380582
+    second: assets(3)_201
+  - first:
+      213: -5156564889579243850
+    second: assets(3)_202
+  - first:
+      213: 6881352464486064174
+    second: assets(3)_203
+  - first:
+      213: -2285635710610031805
+    second: assets(3)_204
+  - first:
+      213: 8078479261217496044
+    second: assets(3)_205
+  - first:
+      213: -8991039508505405343
+    second: assets(3)_206
+  - first:
+      213: 5876989111140341726
+    second: assets(3)_207
+  - first:
+      213: 4680512794378914695
+    second: assets(3)_208
+  - first:
+      213: 1073453703707082385
+    second: assets(3)_209
+  - first:
+      213: -283035105482487076
+    second: assets(3)_210
+  - first:
+      213: -5145697899727190105
+    second: assets(3)_211
+  - first:
+      213: 1576605680264431821
+    second: assets(3)_212
+  - first:
+      213: -5527123502737012772
+    second: assets(3)_213
+  - first:
+      213: 7749032900886293913
+    second: assets(3)_214
+  - first:
+      213: 2813063718763208634
+    second: assets(3)_215
+  - first:
+      213: 6630005884798798229
+    second: assets(3)_216
+  - first:
+      213: 5768022546191445607
+    second: assets(3)_217
+  - first:
+      213: -1054281056971082478
+    second: assets(3)_218
+  - first:
+      213: 4925493659853084687
+    second: assets(3)_219
+  - first:
+      213: -8282726509653131937
+    second: assets(3)_220
+  - first:
+      213: 4154896343494793685
+    second: assets(3)_221
+  - first:
+      213: -3829382801036142684
+    second: assets(3)_222
+  - first:
+      213: -2795371119054152898
+    second: assets(3)_223
+  - first:
+      213: -6321199491162746852
+    second: assets(3)_224
+  - first:
+      213: -5900588687006621622
+    second: assets(3)_225
+  - first:
+      213: -8716910562441261095
+    second: assets(3)_226
+  - first:
+      213: -5685267021014361313
+    second: assets(3)_227
+  - first:
+      213: -2247621149866776610
+    second: assets(3)_228
+  - first:
+      213: 4832124758449187366
+    second: assets(3)_229
+  - first:
+      213: 5662732079121933779
+    second: assets(3)_230
+  - first:
+      213: 2750318188405701895
+    second: assets(3)_231
+  - first:
+      213: -523226994215592761
+    second: assets(3)_232
+  - first:
+      213: -1081802208988668934
+    second: assets(3)_233
+  - first:
+      213: -5396935919289217778
+    second: assets(3)_234
+  - first:
+      213: 3787411212511019775
+    second: assets(3)_235
+  - first:
+      213: -5698480164260919452
+    second: assets(3)_236
+  - first:
+      213: -8122586640706650492
+    second: assets(3)_237
+  - first:
+      213: -8409602790081071511
+    second: assets(3)_238
+  - first:
+      213: -3134125092700128305
+    second: assets(3)_239
+  - first:
+      213: -4022723770939474729
+    second: assets(3)_240
+  - first:
+      213: -8421356636992914043
+    second: assets(3)_241
+  - first:
+      213: -8793083061431105203
+    second: assets(3)_242
+  - first:
+      213: 918702952548935794
+    second: assets(3)_243
+  - first:
+      213: 4077343786852120964
+    second: assets(3)_244
+  - first:
+      213: 1392679897488364993
+    second: assets(3)_245
+  - first:
+      213: -6994246819263436285
+    second: assets(3)_246
+  - first:
+      213: 2753853236431947879
+    second: assets(3)_247
+  - first:
+      213: 1807796901501777720
+    second: assets(3)_248
+  - first:
+      213: 662495962301942489
+    second: assets(3)_249
+  - first:
+      213: 6545567076311275499
+    second: assets(3)_250
+  - first:
+      213: -3675627198164560520
+    second: assets(3)_251
+  - first:
+      213: 380175490987977920
+    second: assets(3)_252
+  - first:
+      213: -4996171598345146146
+    second: assets(3)_253
+  - first:
+      213: -7457143662827760601
+    second: assets(3)_254
+  - first:
+      213: 3482079160151998330
+    second: Dark Blue Ball
+  - first:
+      213: -6753480457254399979
+    second: Light Blue Ball
+  - first:
+      213: 3948482920244509796
+    second: Player Wro
+  - first:
+      213: 3698083056092714572
+    second: Dark Blue Platform
+  - first:
+      213: 4007580236940849860
+    second: Light Blue Platform
+  - first:
+      213: 5228874413672158388
+    second: Dark Blue Floor
+  - first:
+      213: -2351154566193796668
+    second: Light Blue Floor
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 90
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dark Blue Ball
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 948
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 68, y: -102}
+        - {x: 68, y: -92}
+        - {x: 78, y: -92}
+        - {x: 80, y: -90}
+        - {x: 80, y: -80}
+        - {x: 90, y: -80}
+        - {x: 92, y: -78}
+        - {x: 92, y: -68}
+        - {x: 102, y: -68}
+        - {x: 104, y: -66}
+        - {x: 104, y: -44}
+        - {x: 114, y: -44}
+        - {x: 114, y: 44}
+        - {x: 104, y: 44}
+        - {x: 104, y: 66}
+        - {x: 102, y: 68}
+        - {x: 92, y: 68}
+        - {x: 92, y: 78}
+        - {x: 90, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: 90}
+        - {x: 78, y: 92}
+        - {x: 68, y: 92}
+        - {x: 68, y: 102}
+        - {x: 66, y: 104}
+        - {x: 44, y: 104}
+        - {x: 44, y: 114}
+        - {x: -44, y: 114}
+        - {x: -44, y: 104}
+        - {x: -66, y: 104}
+        - {x: -68, y: 102}
+        - {x: -68, y: 92}
+        - {x: -78, y: 92}
+        - {x: -80, y: 90}
+        - {x: -80, y: 80}
+        - {x: -90, y: 80}
+        - {x: -92, y: 78}
+        - {x: -92, y: 68}
+        - {x: -102, y: 68}
+        - {x: -104, y: 66}
+        - {x: -104, y: 44}
+        - {x: -114, y: 44}
+        - {x: -114, y: -44}
+        - {x: -104, y: -44}
+        - {x: -104, y: -66}
+        - {x: -102, y: -68}
+        - {x: -92, y: -68}
+        - {x: -92, y: -78}
+        - {x: -90, y: -80}
+        - {x: -80, y: -80}
+        - {x: -80, y: -90}
+        - {x: -78, y: -92}
+        - {x: -68, y: -92}
+        - {x: -68, y: -102}
+        - {x: -66, y: -104}
+        - {x: -44, y: -104}
+        - {x: -44, y: -114}
+        - {x: 44, y: -114}
+        - {x: 44, y: -104}
+        - {x: 66, y: -104}
+      physicsShape:
+      - - {x: 68, y: -102}
+        - {x: 68, y: -92}
+        - {x: 78, y: -92}
+        - {x: 80, y: -90}
+        - {x: 80, y: -80}
+        - {x: 90, y: -80}
+        - {x: 92, y: -78}
+        - {x: 92, y: -68}
+        - {x: 102, y: -68}
+        - {x: 104, y: -66}
+        - {x: 104, y: -44}
+        - {x: 114, y: -44}
+        - {x: 114, y: 44}
+        - {x: 104, y: 44}
+        - {x: 104, y: 66}
+        - {x: 102, y: 68}
+        - {x: 92, y: 68}
+        - {x: 92, y: 78}
+        - {x: 90, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: 90}
+        - {x: 78, y: 92}
+        - {x: 68, y: 92}
+        - {x: 68, y: 102}
+        - {x: 66, y: 104}
+        - {x: 44, y: 104}
+        - {x: 44, y: 114}
+        - {x: -44, y: 114}
+        - {x: -44, y: 104}
+        - {x: -66, y: 104}
+        - {x: -68, y: 102}
+        - {x: -68, y: 92}
+        - {x: -78, y: 92}
+        - {x: -80, y: 90}
+        - {x: -80, y: 80}
+        - {x: -90, y: 80}
+        - {x: -92, y: 78}
+        - {x: -92, y: 68}
+        - {x: -102, y: 68}
+        - {x: -104, y: 66}
+        - {x: -104, y: 44}
+        - {x: -114, y: 44}
+        - {x: -114, y: -44}
+        - {x: -104, y: -44}
+        - {x: -104, y: -66}
+        - {x: -102, y: -68}
+        - {x: -92, y: -68}
+        - {x: -92, y: -78}
+        - {x: -90, y: -80}
+        - {x: -80, y: -80}
+        - {x: -80, y: -90}
+        - {x: -78, y: -92}
+        - {x: -68, y: -92}
+        - {x: -68, y: -102}
+        - {x: -66, y: -104}
+        - {x: -44, y: -104}
+        - {x: -44, y: -114}
+        - {x: 44, y: -114}
+        - {x: 44, y: -104}
+        - {x: 66, y: -104}
+      tessellationDetail: 1
+      bones: []
+      spriteID: a7f76ac1c84d25030800000000000000
+      internalID: 3482079160151998330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light Blue Ball
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 948
+        width: 228
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 68, y: -102}
+        - {x: 68, y: -92}
+        - {x: 78, y: -92}
+        - {x: 80, y: -90}
+        - {x: 80, y: -80}
+        - {x: 90, y: -80}
+        - {x: 92, y: -78}
+        - {x: 92, y: -68}
+        - {x: 102, y: -68}
+        - {x: 104, y: -66}
+        - {x: 104, y: -44}
+        - {x: 114, y: -44}
+        - {x: 114, y: 44}
+        - {x: 104, y: 44}
+        - {x: 104, y: 66}
+        - {x: 102, y: 68}
+        - {x: 92, y: 68}
+        - {x: 92, y: 78}
+        - {x: 90, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: 90}
+        - {x: 78, y: 92}
+        - {x: 68, y: 92}
+        - {x: 68, y: 102}
+        - {x: 66, y: 104}
+        - {x: 44, y: 104}
+        - {x: 44, y: 114}
+        - {x: -44, y: 114}
+        - {x: -44, y: 104}
+        - {x: -66, y: 104}
+        - {x: -68, y: 102}
+        - {x: -68, y: 92}
+        - {x: -78, y: 92}
+        - {x: -80, y: 90}
+        - {x: -80, y: 80}
+        - {x: -90, y: 80}
+        - {x: -92, y: 78}
+        - {x: -92, y: 68}
+        - {x: -102, y: 68}
+        - {x: -104, y: 66}
+        - {x: -104, y: 44}
+        - {x: -114, y: 44}
+        - {x: -114, y: -44}
+        - {x: -104, y: -44}
+        - {x: -104, y: -66}
+        - {x: -102, y: -68}
+        - {x: -92, y: -68}
+        - {x: -92, y: -78}
+        - {x: -90, y: -80}
+        - {x: -80, y: -80}
+        - {x: -80, y: -90}
+        - {x: -78, y: -92}
+        - {x: -68, y: -92}
+        - {x: -68, y: -102}
+        - {x: -66, y: -104}
+        - {x: -44, y: -104}
+        - {x: -44, y: -114}
+        - {x: 44, y: -114}
+        - {x: 44, y: -104}
+        - {x: 66, y: -104}
+      physicsShape:
+      - - {x: 68, y: -102}
+        - {x: 68, y: -92}
+        - {x: 78, y: -92}
+        - {x: 80, y: -90}
+        - {x: 80, y: -80}
+        - {x: 90, y: -80}
+        - {x: 92, y: -78}
+        - {x: 92, y: -68}
+        - {x: 102, y: -68}
+        - {x: 104, y: -66}
+        - {x: 104, y: -44}
+        - {x: 114, y: -44}
+        - {x: 114, y: 44}
+        - {x: 104, y: 44}
+        - {x: 104, y: 66}
+        - {x: 102, y: 68}
+        - {x: 92, y: 68}
+        - {x: 92, y: 78}
+        - {x: 90, y: 80}
+        - {x: 80, y: 80}
+        - {x: 80, y: 90}
+        - {x: 78, y: 92}
+        - {x: 68, y: 92}
+        - {x: 68, y: 102}
+        - {x: 66, y: 104}
+        - {x: 44, y: 104}
+        - {x: 44, y: 114}
+        - {x: -44, y: 114}
+        - {x: -44, y: 104}
+        - {x: -66, y: 104}
+        - {x: -68, y: 102}
+        - {x: -68, y: 92}
+        - {x: -78, y: 92}
+        - {x: -80, y: 90}
+        - {x: -80, y: 80}
+        - {x: -90, y: 80}
+        - {x: -92, y: 78}
+        - {x: -92, y: 68}
+        - {x: -102, y: 68}
+        - {x: -104, y: 66}
+        - {x: -104, y: 44}
+        - {x: -114, y: 44}
+        - {x: -114, y: -44}
+        - {x: -104, y: -44}
+        - {x: -104, y: -66}
+        - {x: -102, y: -68}
+        - {x: -92, y: -68}
+        - {x: -92, y: -78}
+        - {x: -90, y: -80}
+        - {x: -80, y: -80}
+        - {x: -80, y: -90}
+        - {x: -78, y: -92}
+        - {x: -68, y: -92}
+        - {x: -68, y: -102}
+        - {x: -66, y: -104}
+        - {x: -44, y: -104}
+        - {x: -44, y: -114}
+        - {x: 44, y: -114}
+        - {x: 44, y: -104}
+        - {x: 66, y: -104}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 5101fcb3e41d642a0800000000000000
+      internalID: -6753480457254399979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Blue Platform
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 708
+        width: 672
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 314, y: -96}
+        - {x: 314, y: -74}
+        - {x: 324, y: -74}
+        - {x: 326, y: -72}
+        - {x: 326, y: -50}
+        - {x: 336, y: -50}
+        - {x: 336, y: 108}
+        - {x: -336, y: 108}
+        - {x: -336, y: -50}
+        - {x: -326, y: -50}
+        - {x: -326, y: -72}
+        - {x: -324, y: -74}
+        - {x: -314, y: -74}
+        - {x: -314, y: -96}
+        - {x: -312, y: -98}
+        - {x: -290, y: -98}
+        - {x: -290, y: -108}
+        - {x: 290, y: -108}
+        - {x: 290, y: -98}
+        - {x: 312, y: -98}
+      physicsShape:
+      - - {x: 314, y: -96}
+        - {x: 314, y: -74}
+        - {x: 324, y: -74}
+        - {x: 326, y: -72}
+        - {x: 326, y: -50}
+        - {x: 336, y: -50}
+        - {x: 336, y: 108}
+        - {x: -336, y: 108}
+        - {x: -336, y: -50}
+        - {x: -326, y: -50}
+        - {x: -326, y: -72}
+        - {x: -324, y: -74}
+        - {x: -314, y: -74}
+        - {x: -314, y: -96}
+        - {x: -312, y: -98}
+        - {x: -290, y: -98}
+        - {x: -290, y: -108}
+        - {x: 290, y: -108}
+        - {x: 290, y: -98}
+        - {x: 312, y: -98}
+      tessellationDetail: 1
+      bones: []
+      spriteID: c461c4c32fa325330800000000000000
+      internalID: 3698083056092714572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light Blue Platform
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 480
+        width: 672
+        height: 216
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 314, y: -96}
+        - {x: 314, y: -74}
+        - {x: 324, y: -74}
+        - {x: 326, y: -72}
+        - {x: 326, y: -50}
+        - {x: 336, y: -50}
+        - {x: 336, y: 108}
+        - {x: -336, y: 108}
+        - {x: -336, y: -50}
+        - {x: -326, y: -50}
+        - {x: -326, y: -72}
+        - {x: -324, y: -74}
+        - {x: -314, y: -74}
+        - {x: -314, y: -96}
+        - {x: -312, y: -98}
+        - {x: -290, y: -98}
+        - {x: -290, y: -108}
+        - {x: 290, y: -108}
+        - {x: 290, y: -98}
+        - {x: 312, y: -98}
+      physicsShape:
+      - - {x: 314, y: -96}
+        - {x: 314, y: -74}
+        - {x: 324, y: -74}
+        - {x: 326, y: -72}
+        - {x: 326, y: -50}
+        - {x: 336, y: -50}
+        - {x: 336, y: 108}
+        - {x: -336, y: 108}
+        - {x: -336, y: -50}
+        - {x: -326, y: -50}
+        - {x: -326, y: -72}
+        - {x: -324, y: -74}
+        - {x: -314, y: -74}
+        - {x: -314, y: -96}
+        - {x: -312, y: -98}
+        - {x: -290, y: -98}
+        - {x: -290, y: -108}
+        - {x: 290, y: -108}
+        - {x: 290, y: -98}
+        - {x: 312, y: -98}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 4c23cbf0ef8cd9730800000000000000
+      internalID: 4007580236940849860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Blue Floor
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 258
+        width: 1200
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -600, y: 102}
+        - {x: -600, y: -102}
+        - {x: 600, y: -102}
+        - {x: 600, y: 102}
+      physicsShape:
+      - - {x: -600, y: 102}
+        - {x: -600, y: -102}
+        - {x: 600, y: -102}
+        - {x: 600, y: 102}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 4b4de025391b09840800000000000000
+      internalID: 5228874413672158388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light Blue Floor
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 36
+        width: 1200
+        height: 204
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -600, y: 102}
+        - {x: -600, y: -102}
+        - {x: 600, y: -102}
+        - {x: 600, y: 102}
+      physicsShape:
+      - - {x: -600, y: 102}
+        - {x: -600, y: -102}
+        - {x: 600, y: -102}
+        - {x: 600, y: 102}
+      tessellationDetail: 1
+      bones: []
+      spriteID: 4c92bf501650f5fd0800000000000000
+      internalID: -2351154566193796668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

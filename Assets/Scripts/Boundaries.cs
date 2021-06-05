@@ -29,10 +29,9 @@ public class Boundaries : MonoBehaviour
 
 
         float positiveVerticalBoundary = screenBounds.y;
-        float negativeVerticalBoundary = screenBounds.y - (Camera.main.transform.position.y * 2);
 
         viewPos.x = Mathf.Clamp(viewPos.x, negativeHorizontalBoundary * -1 + playerWidth, positiveHorizontalBoundary - playerWidth);
-        viewPos.y = Mathf.Clamp(viewPos.y, negativeVerticalBoundary * -1 + playerHeight, positiveVerticalBoundary - playerHeight);
+        viewPos.y = Mathf.Clamp(viewPos.y, -100 + playerHeight, positiveVerticalBoundary - playerHeight);
 
         transform.position = viewPos;
 

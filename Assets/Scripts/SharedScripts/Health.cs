@@ -10,7 +10,7 @@ public class Health : MonoBehaviour
     public HealthUI heartContainers;
 
     private SceneChange sceneChange;
-
+    
     // Start is called before the first frame update
     void Start()
     {

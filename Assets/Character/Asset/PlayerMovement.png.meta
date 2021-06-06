@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 7b2d74d4cce5ac145b5be932588f032d
+guid: d2cebd8107db61e4c93cd49ead2c21d0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5108901061468006116
-    second: Ability Surge Assets (2)_0
+      213: 463167036469006645
+    second: Frame1
+  - first:
+      213: -3901825175021881390
+    second: Frame 2
+  - first:
+      213: -5664650594666802891
+    second: Frame 3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -44,11 +50,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 390
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -67,7 +73,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -79,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -90,13 +96,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ability Surge Assets (2)_0
+      name: Frame1
       rect:
         serializedVersion: 2
-        x: 728
-        y: 862
-        width: 150
-        height: 283
+        x: 620
+        y: 221
+        width: 359
+        height: 727
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,8 +110,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e6aa61827676e640800000000000000
-      internalID: 5108901061468006116
+      spriteID: 531d76837ff7d6600800000000000000
+      internalID: 463167036469006645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame 2
+      rect:
+        serializedVersion: 2
+        x: 2221
+        y: 221
+        width: 358
+        height: 727
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7f4231daee9d9c0800000000000000
+      internalID: -3901825175021881390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Frame 3
+      rect:
+        serializedVersion: 2
+        x: 3821
+        y: 221
+        width: 359
+        height: 727
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5311e28fb4e1361b0800000000000000
+      internalID: -5664650594666802891
       vertices: []
       indices: 
       edges: []

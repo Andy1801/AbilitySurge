@@ -5,16 +5,17 @@ using UnityEngine.UI;
 
 public class HealthUI : MonoBehaviour
 {
-    private Stack<Image> heartContainers;
+    private Stack<Animator> heartContainers;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
-        heartContainers = new Stack<Image>();
+        heartContainers = new Stack<Animator>();
 
         foreach (Transform childTransform in gameObject.transform.GetComponentInChildren<Transform>())
         {
-            heartContainers.Push(childTransform.GetChild(0).GetComponent<Image>());
+            heartContainers.Push(childTransform.GetComponent<Animator>());
         }
         Debug.Log(heartContainers.Count);
     }
@@ -30,9 +31,10 @@ public class HealthUI : MonoBehaviour
 
     public void reduceHeartContainers()
     {
-        Image heartContainer = heartContainers.Count != 0 ? heartContainers.Pop() : null;
-
-        if (heartContainer != null)
-            heartContainer.fillAmount = 0;
+        Animator heartContainer = heartContainers.Count != 0 ? heartContainers.Pop() : null;
+        if(heartContainer != null)
+        {
+            heartContainer.SetBool("Broken", true);
+        }
     }
 }

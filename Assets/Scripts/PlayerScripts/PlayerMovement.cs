@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject dashEffect;
     public float playerSpeed;
     public float jumpForce;
+    public Animator animator;
+    public SpriteRenderer spriteRenderer;
 
     private Player player;
     private Grounded grounded;
@@ -29,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         grounded = player.GetComponentInChildren<Grounded>();
         timer = new Timer(jumpTime);
+        spriteRenderer = player.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -40,7 +43,15 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         moveInput = Input.GetAxisRaw("Horizontal");
-
+        animator.SetFloat("Speed", Mathf.Abs(moveInput));
+        if(moveInput < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if(moveInput > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
         Jump();
     }
 
